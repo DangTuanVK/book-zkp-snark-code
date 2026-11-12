@@ -1,0 +1,11 @@
+T_0 (     2 phần tử): số nghiệm của X^2 + X_-1·X + 1 = 0
+T_1 (     4 phần tử): số nghiệm của X^2 + X_0·X + 1 = 0
+T_2 (    16 phần tử): số nghiệm của X^2 + X_1·X + 1 = 0
+T_3 (   256 phần tử): số nghiệm của X^2 + X_2·X + 1 = 0
+T_4 ( 65536 phần tử): số nghiệm của X^2 + X_3·X + 1 = 0
+T_1: a^3 = 1 với mọi a khác 0 (vét cạn 3 phần tử)
+T_2: a^15 = 1 với mọi a khác 0 (vét cạn 15 phần tử)
+T_3: a^255 = 1 với mọi a khác 0 (vét cạn 255 phần tử)
+Trong F_2: 0^2 = 0, 1^2 = 1;  trong T_3 các x với x^2 = x: [0, 1]
+X0 · 0b10110110: nhân trong T_3 = 0b11011011, theo 4 tọa độ T_1 = 0b11011011
+2^20 bit: mỗi bit 32 byte -> 33554432 byte; đóng gói 128 bit/phần tử T_7 -> 8192 phần tử, 131072 byte

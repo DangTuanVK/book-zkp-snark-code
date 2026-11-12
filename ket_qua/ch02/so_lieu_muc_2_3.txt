@@ -1,0 +1,5 @@
+số N không có witness trong R6: 224 / 449
+200 lần lặp lại mỗi tấn công:
+  FS yếu, không nhắm: trung bình 1.82 lần gọi băm (kỳ vọng 2.00)
+  FS yếu, nhắm N* = 43: trung bình 429.9 (kỳ vọng 449)
+  FS mạnh, N = 43: trung bình 110.1 (kỳ vọng 112.25), nhỏ nhất 1, lớn nhất 769

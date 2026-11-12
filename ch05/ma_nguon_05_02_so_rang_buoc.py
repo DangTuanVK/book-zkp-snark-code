@@ -36,4 +36,4 @@ c0 = mach_phan_tich()[0]
 assert c0.stats()["m"] == 13 and c0.compile_plonkish().n == 20
 # a, b >= 2 là hệ quả: a = 0 -> a·b = 0 != 391; a = 1 -> b ≡ 391 không vừa 5 bit
 assert all((1 * b) % 449 != 391 for b in range(32))
-print("Kiểm: với a, b ∈ [0, 31], a ∈ {0, 1} không thể cho a·b ≡ 391 (mod 449)")
+print("Kiểm: với a, b in [0, 31], a in {0, 1} không thể cho a·b ≡ 391 (mod 449)")

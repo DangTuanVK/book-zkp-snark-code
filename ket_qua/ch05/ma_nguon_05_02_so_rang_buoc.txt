@@ -10,4 +10,4 @@ Plonkish: 22 hàng (đệm 2^k: 32), 13 cổng nhân, 9 cổng tuyến tính/cô
 CCS     : m = 15, n = 16, t = 3 ma trận, q = 2 đa tập [[0, 1], [2]], c = [1, -1], bậc d = 2
 QAP/Groth16: m + ℓ + 1 = 17 hàng -> miền H cỡ n = 32
 Witness (17, 23) thỏa R1CS / Plonkish / CCS: (True, True, True)
-Kiểm: với a, b ∈ [0, 31], a ∈ {0, 1} không thể cho a·b ≡ 391 (mod 449)
+Kiểm: với a, b in [0, 31], a in {0, 1} không thể cho a·b ≡ 391 (mod 449)

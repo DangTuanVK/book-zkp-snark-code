@@ -1,0 +1,18 @@
+== (1) SRS bậc 3, tau = 10; G1 = (2658, 1349); C = (752, 513)
+lời mở trung thực tại z = 3: y = 101, W = (3610, 3068), verify = True
+lời mở giả: y' = 102, W' = 220·G1 = (504, 4412), verify = True
+W = 156·G1 (thương q(tau) = 156)
+
+== (2) Quy dẫn: P = (y' - y)^(-1) · (W - W'), c = -z
+c = 446, P = (4427, 792)
+1/(tau + c) mod 449 = 385; P == [1/(tau+c)]_1: True
+e(P, [tau]_2 + c[1]_2) = 1780 + 1636·i; e(G1, G1) = 1780 + 1636·i
+
+== (3) AGM: biểu diễn của W' là hằng số w' = 220
+R(X) = f(X) - y' - w'(X - z) = 132 + 246·X + 1·X^3
+nghiệm của R trong F_449: [10, 204, 235]
+nghiệm t có [t]_1 = [tau]_1: [10]
+lời mở trung thực: hiệu lý tưởng bằng 0: True
+
+== (4) Gộp t = 2 đa thức tại cùng z: tổng sai lệch triệt tiêu theo gamma
+số gamma làm (f(z)-s1) + gamma(g(z)-s2) = 0: 1 [64]

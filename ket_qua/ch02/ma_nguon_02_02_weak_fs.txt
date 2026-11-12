@@ -1,0 +1,4 @@
+trung thực N = 391: verify mạnh = True
+FS yếu: delta = 3, N* = 268, có witness: False, verify yếu = True, mạnh = False
+FS yếu, nhắm N* = 43: 422 lần thử, verify yếu = True
+FS mạnh, N = 43: 10 lần thử, verify mạnh = True, có witness: False

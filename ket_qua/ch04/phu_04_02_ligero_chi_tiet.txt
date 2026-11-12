@@ -1,0 +1,11 @@
+omega_16 = 349  miền RS = <omega_16>, 16 phần tử
+gamma = [195, 353, 411, 392]  alpha = eq(., (2,3)) = [2, 446, 445, 6]
+Enc(u_prox) = [421, 4, 185, 397, 177, 281, 258, 235, 418, 37, 382, 135, 126, 371, 317, 375]
+Enc(u_eval) = [402, 147, 43, 18, 289, 238, 254, 437, 97, 428, 375, 104, 90, 65, 206, 319]
+  cột  9: <gamma,cột> =  37 = Enc(u_prox)[9] =  37;  <alpha,cột> = 428 = Enc(u_eval)[9] = 428
+  cột 14: <gamma,cột> = 317 = Enc(u_prox)[14] = 317;  <alpha,cột> = 206 = Enc(u_eval)[14] = 206
+  cột  5: <gamma,cột> = 281 = Enc(u_prox)[5] = 281;  <alpha,cột> = 238 = Enc(u_eval)[5] = 238
+  cột 13: <gamma,cột> = 371 = Enc(u_prox)[13] = 371;  <alpha,cột> =  65 = Enc(u_eval)[13] =  65
+Enc(M[1]) = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]  (hàng (1,0,0,0) cho từ mã hằng)
+gập (alpha1, alpha2) = (5, 25): [3, 1, 4, 1] -> [8, 9] -> [233] ;  Q(alpha1, alpha2) = 233
+gập (alpha1, alpha2) = (2, 3): [3, 1, 4, 1] -> [5, 6] -> [23] ;  Q(alpha1, alpha2) = 23

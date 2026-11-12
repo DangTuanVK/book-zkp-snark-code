@@ -1,0 +1,14 @@
+== (1) QAP như PCP tuyến tính, N = 391, (a, b) = (17, 23) ==
+|z| = 14, deg h = 14 -> proof pi = (z, h) dài 29 phần tử; |H| = 16, t(X) = X^16 - 1
+r = 427: <q1,z> = A(r) = 316, <q2,z> = B(r) = 445, <q3,z> = C(r) = 204, <q4,h> = h(r) = 285, t(r) = 447
+kiểm bậc 2: A·B - C = 328, h·t = 328 -> True
+== (2) Một z sai, N = 389 (thay N, giữ a, b) ==
+phần dư R(X) = A·B - C - h·t có bậc 15; số r trong F_449 làm phép kiểm lọt: 15 [1, 35, 67, 77, 92, 100, 122, 220, 229, 327, 349, 357, 372, 414, 448]
+trong đó thuộc H: 15 (mọi điểm của H trừ [382] = omega^12, hàng cổng nhân); ngoài H: 0
+cận tổng quát: deg(A·B - C - h·t) <= 2(n-1) = 30 -> r đều trên F \ H: xác suất lọt <= 30/433 = 0.0693
+vét cạn a, b trong [0, 31] với a·b = 389 (mod 449): []
+== (3) Ba hàm tuyến tính khác nhau cho ba truy vấn, N = 389 ==
+zA: a = 1; zB: b = 389; zC: a = 17, b = 23; mọi zX có N = 389
+A_zA·B_zB - C_zC chia hết cho t(X): True; tại r: 111·341 - 261 = 323, h(r)·t(r) = 323
+q5 = 2·q1 + 3·q2 + 5·q3, Prover trung thực (một z): <q5,.> = 293, 2·a1 + 3·a2 + 5·a3 = 293 -> True
+q5 = 2·q1 + 3·q2 + 5·q3, Prover gian lận (zA, zB, zC): <q5,.> = 154, 2·a1 + 3·a2 + 5·a3 = 305 -> False

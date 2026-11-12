@@ -1,4 +1,4 @@
-"""KZG đa tuyến tính (PST13) — ví dụ 2 biến tính tay được và kiểm 3 biến (Mục 3.2b).
+"""KZG đa tuyến tính (PST13) — ví dụ 2 biến tính tay được và kiểm 3 biến (Mục 3.2, lst:ch3-pst).
 
 Bảng 2 biến (big-endian, x_1 là bit cao): q(0,0)=17, q(0,1)=23, q(1,0)=2, q(1,1)=31.
 Cửa sập τ = (5, 6), điểm mở z = (3, 4). Toy: Type 1 (G2 = G1).
@@ -18,7 +18,7 @@ srs = pst.setup(2, TAU)
 v = evaluate(F, T, Z)
 w1, w2 = pst.quotients(T, Z)          # w_1(X_2) và hằng số w_2
 print("bảng q             =", T, " q(z) = q(3, 4) =", int(v))
-print("w_1 trên X_2∈{0,1} =", [int(x) for x in w1], " (= q(1, X_2) - q(0, X_2))")
+print("w_1 trên X_2 in {0,1} =", [int(x) for x in w1], " (= q(1, X_2) - q(0, X_2))")
 print("w_2 (hằng)         =", [int(x) for x in w2], " (= hiệu sau khi cố định x_1 = 3)")
 # kiểm Fact 15.1 tại một điểm X tùy ý: q(X) - v = (X1 - z1) w1(X2) + (X2 - z2) w2
 X = [F(100), F(200)]

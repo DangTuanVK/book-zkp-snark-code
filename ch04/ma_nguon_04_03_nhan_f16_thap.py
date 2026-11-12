@@ -1,4 +1,4 @@
-"""Chương 4 — Nhân tay trong F_16 của tháp nhị phân (Mục 4.2d).
+"""Chương 4 — Nhân tay trong F_16 của tháp nhị phân (Mục 4.2).
 
 T_1 = F_4  = F_2[X0]/(X0^2 + X0 + 1)
 T_2 = F_16 = F_4[X1]/(X1^2 + X0·X1 + 1)

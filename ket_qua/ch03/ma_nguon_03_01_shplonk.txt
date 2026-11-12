@@ -1,6 +1,7 @@
 KZG một điểm: f_1(7) = 202, W = (3016, 1648), verify = True
-Batch 1 điểm: y = [202, 58, 433]  W = (4787, 4861)  verify = True
+Batch 1 điểm: gamma = 44, y = [202, 58, 433]  W = (4787, 4861)  verify = True
 SHPLONK: z1 = 198, giá trị mở = [[202], [58], [433], [292, 8]]
+         gamma = 148, z = 309, Z_T(z) = 296
          W = (2112, 4564), W' = (5229, 3588), verify = True
          prover: MSM cỡ [15, 15] ; verifier: pairing=2, msm=1, msm_size=7, smul=0, add=69
 SHPLONK với f_4(z1) khai sai: verify = False

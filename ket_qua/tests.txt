@@ -5,12 +5,12 @@ Python 3.11.15
 ĐẠT  test_ch03_kzg      test_batch_one_point       0.01 s
 ĐẠT  test_ch03_kzg      test_ceremony_detects_cheating   0.02 s
 ĐẠT  test_ch03_kzg      test_commit_homomorphic_and_degree_bound   0.00 s
-ĐẠT  test_ch03_kzg      test_gwc_multi_poly_multi_point   0.08 s
+ĐẠT  test_ch03_kzg      test_gwc_multi_poly_multi_point   0.07 s
 ĐẠT  test_ch03_kzg      test_hand_example          0.00 s
 ĐẠT  test_ch03_kzg      test_hiding                0.01 s
 ĐẠT  test_ch03_kzg      test_multi_point_one_poly   0.01 s
 ĐẠT  test_ch03_kzg      test_opcount_scope         0.00 s
-ĐẠT  test_ch03_kzg      test_pst                   0.02 s
+ĐẠT  test_ch03_kzg      test_pst                   0.01 s
 ĐẠT  test_ch03_kzg      test_shplonk               0.23 s
 ĐẠT  test_ch03_kzg      test_single_point          0.02 s
 ĐẠT  test_ch04_gf2tower test_f16_full_axioms       0.07 s
@@ -40,24 +40,24 @@ Python 3.11.15
 ĐẠT  test_ch05_dsl_groth16 test_vet_can_nghiem        0.50 s
 ĐẠT  test_ch05_dsl_groth16 test_witness_xau_bi_bac_o_moi_dang   0.00 s
 ĐẠT  test_ch06_plonk    test_coset_fft_bang_chia_da_thuc   0.07 s
-ĐẠT  test_ch06_plonk    test_doi_dau_vao_cong_khai_bi_bac   0.17 s
+ĐẠT  test_ch06_plonk    test_doi_dau_vao_cong_khai_bi_bac   0.16 s
 ĐẠT  test_ch06_plonk    test_frozen_heart_mot_lan_thu   0.05 s
 ĐẠT  test_ch06_plonk    test_frozen_heart_nham_389   0.08 s
-ĐẠT  test_ch06_plonk    test_proof_trung_thuc      0.14 s
+ĐẠT  test_ch06_plonk    test_proof_trung_thuc      0.13 s
 ĐẠT  test_ch06_plonk    test_setup_tu_choi_tau_trong_H   0.00 s
 ĐẠT  test_ch06_plonk    test_sua_day_bi_bac        0.21 s
 ĐẠT  test_ch06_plonk    test_sua_tung_phan_tu_proof   0.07 s
 ĐẠT  test_ch06_plonk    test_tham_so_mien          0.00 s
 ĐẠT  test_ch06_plonk    test_z_va_mo_kzg_rieng     0.04 s
-ĐẠT  test_ch07_lookup   test_coset_fft_bang_chia_da_thuc   0.21 s
+ĐẠT  test_ch07_lookup   test_coset_fft_bang_chia_da_thuc   0.20 s
 ĐẠT  test_ch07_lookup   test_da_tap_tich           0.00 s
-ĐẠT  test_ch07_lookup   test_dem_chi_phi_verifier   0.16 s
+ĐẠT  test_ch07_lookup   test_dem_chi_phi_verifier   0.15 s
 ĐẠT  test_ch07_lookup   test_dieu_kien_dac_so      0.08 s
 ĐẠT  test_ch07_lookup   test_dong_nhat_thuc_logup   0.00 s
-ĐẠT  test_ch07_lookup   test_ngoai_bang_bi_bac     0.89 s
-ĐẠT  test_ch07_lookup   test_plonk_logup_trung_thuc   0.50 s
+ĐẠT  test_ch07_lookup   test_ngoai_bang_bi_bac     0.88 s
+ĐẠT  test_ch07_lookup   test_plonk_logup_trung_thuc   0.49 s
 ĐẠT  test_ch07_lookup   test_range_check_can_tuy_y   0.00 s
-ĐẠT  test_ch07_lookup   test_sua_proof_bi_bac      0.41 s
+ĐẠT  test_ch07_lookup   test_sua_proof_bi_bac      0.39 s
 ĐẠT  test_ch07_lookup   test_tong_tich_luy_quay_ve_0   0.00 s
 ĐẠT  test_ch07_lookup   test_vet_can               0.00 s
 ĐẠT  test_ch08_gkr      test_example_circuit       0.00 s
@@ -82,11 +82,11 @@ Python 3.11.15
 ĐẠT  test_ch09_folding  test_hypernova_degree3     0.00 s
 ĐẠT  test_ch09_folding  test_hypernova_reject      0.16 s
 ĐẠT  test_ch09_folding  test_nonnative_formula_and_soundness   0.06 s
-ĐẠT  test_ch09_folding  test_nova_fold             0.04 s
+ĐẠT  test_ch09_folding  test_nova_fold             0.03 s
 ĐẠT  test_ch10_montgomery test_449_vet_can           0.02 s
 ĐẠT  test_ch10_montgomery test_bien_redc             0.00 s
 ĐẠT  test_ch10_montgomery test_bls12_381_va_bn254    0.01 s
-ĐẠT  test_ch10_pippenger test_can_tren_ly_thuyet    0.04 s
+ĐẠT  test_ch10_pippenger test_can_tren_ly_thuyet    0.05 s
 ĐẠT  test_ch10_pippenger test_dem_khop_tinh_that    0.01 s
 ĐẠT  test_ch10_pippenger test_pippenger_bang_ngay_tho   0.17 s
 ĐẠT  test_ch10_tham_so  test_bls12_381             0.01 s
@@ -109,7 +109,7 @@ Python 3.11.15
 ĐẠT  test_ch12_uniqueness test_fuzz                  0.48 s
 ĐẠT  test_ch12_uniqueness test_roots_bac_hai         0.00 s
 ĐẠT  test_ch12_uniqueness test_vet_can_ca_truong     0.01 s
-ĐẠT  test_ch12_uniqueness test_vet_can_khop_brute_force   2.05 s
+ĐẠT  test_ch12_uniqueness test_vet_can_khop_brute_force   2.10 s
 ĐẠT  test_ch12_uniqueness test_vet_can_mach_cu_va_moi   0.05 s
 ĐẠT  test_ch12_uniqueness test_z3_neu_co             0.00 s
 ĐẠT  test_curve         test_count                 0.01 s
@@ -139,5 +139,5 @@ Python 3.11.15
 ĐẠT  test_transcript    test_distribution          0.02 s
 ĐẠT  test_transcript    test_sensitivity           0.00 s
 
-Tổng: 137 đạt, 0 lỗi, 9.1 s
+Tổng: 137 đạt, 0 lỗi, 9.0 s
 Hằng số: đã ghi ket_qua/hang_so.txt

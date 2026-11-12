@@ -336,22 +336,33 @@
       "ch01/ma_nguon_01_01_bon_tang.py",
       "ch01/ma_nguon_01_02_kiem_tham_so.py"
     ],
+    "ch02": [
+      "ch02/ma_nguon_02_01_rewinding.py",
+      "ch02/ma_nguon_02_02_weak_fs.py",
+      "ch02/so_lieu_muc_2_1.py",
+      "ch02/so_lieu_muc_2_2.py",
+      "ch02/so_lieu_muc_2_3.py"
+    ],
     "ch03": [
-      "ch03/ma_nguon_03_01_vi_du_da_diem.py",
-      "ch03/ma_nguon_03_02_shplonk.py",
+      "ch03/ma_nguon_03_01_shplonk.py",
+      "ch03/ma_nguon_03_02_pst.py",
       "ch03/ma_nguon_03_03_ceremony.py",
-      "ch03/ma_nguon_03_04_dem_chi_phi.py",
-      "ch03/ma_nguon_03_05_pst.py",
+      "ch03/ma_nguon_03_04_vi_du_da_diem.py",
+      "ch03/ma_nguon_03_05_dem_chi_phi.py",
       "ch03/ma_nguon_03_06_hiding.py",
       "ch03/ma_nguon_03_07_sai_so_toy.py"
     ],
     "ch04": [
       "ch04/ma_nguon_04_01_ipa_mot_vong.py",
       "ch04/ma_nguon_04_02_ligero.py",
-      "ch04/ma_nguon_04_03_kich_thuoc_proof.py",
-      "ch04/ma_nguon_04_04_nhan_f16_thap.py",
+      "ch04/ma_nguon_04_03_nhan_f16_thap.py",
+      "ch04/ma_nguon_04_04_kich_thuoc_proof.py",
       "ch04/ma_nguon_04_05_hyrax.py",
-      "ch04/ma_nguon_04_06_dem_phep_toan_ipa.py"
+      "ch04/ma_nguon_04_06_dem_phep_toan_ipa.py",
+      "ch04/phu_04_01_ipa_chi_tiet.py",
+      "ch04/phu_04_02_ligero_chi_tiet.py",
+      "ch04/phu_04_03_tham_so_an_toan.py",
+      "ch04/phu_04_04_thap_kiem.py"
     ],
     "ch05": [
       "ch05/lab_r1_tong_hop.py",
@@ -360,6 +371,9 @@
       "ch05/ma_nguon_05_03_groth16_prove.py",
       "ch05/ma_nguon_05_04_tai_ngau_nhien.py",
       "ch05/ma_nguon_05_05_mo_phong.py",
+      "ch05/ma_nguon_05_06_crs_thua.py",
+      "ch05/phu_05_ccs_nhung.py",
+      "ch05/phu_05_lpcp.py",
       "ch05/vet_can_witness.py"
     ],
     "ch06": [

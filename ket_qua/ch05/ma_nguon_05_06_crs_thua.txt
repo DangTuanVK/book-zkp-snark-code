@@ -1,0 +1,4 @@
+phần tử thừa K = [L_1(x)/δ]_1 = (3478, 5095)
+proof cũ với N' = 389: False
+proof giả cho N' = 389: C' = (2668, 4275) -> verify: True
+số N' trong [0, 448] có proof giả hợp lệ: 449

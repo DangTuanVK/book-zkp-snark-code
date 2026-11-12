@@ -1,0 +1,27 @@
+== (1) Plonkish -> CCS, mạch N = 391 ==
+tách: m = 19 (bỏ 1 hàng công khai), n = 20 (1 + 1 công khai + 18 bí mật/tạm), t = 6, q = 5, d = 2, c = [1, 1, 1, 1, 1]
+      nnz(M_j) = [11, 11, 8, 8, 19, 0]; (17, 23) thỏa: True; (17, 24) thỏa: False
+gộp : m = 19 (bỏ 1 hàng công khai), n = 20 (1 + 1 công khai + 18 bí mật/tạm), t = 3, q = 2, d = 2, c = [1, 1]
+      nnz(M_j) = [11, 11, 35]; (17, 23) thỏa: True; (17, 24) thỏa: False
+      39 ràng buộc sao chép được hấp thụ: 57 ô dây -> 18 cột witness
+      hàng cổng nhân (hàng Plonkish 19): (M0 z)=1·a, (M1 z)=1·b, (M2 z)=-1·N
+== (2) AIR 6 hàng x 5 cột (bit cao trước) ==
+(a, b) = (17, 23)
+   alpha = [0, 1, 0, 0, 0, 1]
+   A     = [0, 1, 2, 4, 8, 17]
+   beta  = [0, 1, 0, 1, 1, 1]
+   B     = [0, 1, 2, 5, 11, 23]
+   P     = [0, 1, 4, 20, 88, 391]
+   thỏa AIR (N = 391): True
+(a, b) = (17, 24)
+   alpha = [0, 1, 0, 0, 0, 1]
+   A     = [0, 1, 2, 4, 8, 17]
+   beta  = [0, 1, 1, 0, 0, 0]
+   B     = [0, 1, 3, 6, 12, 24]
+   P     = [0, 1, 6, 24, 96, 408]
+   thỏa AIR (N = 391): False
+AIR -> CCS: m = 33 (18 hàng + 10 chuyển + 5 biên), n = 32, t = 3, q = 2, d = 2; (17, 23) thỏa: True
+== (3) Cổng bậc cao y = x^5 ==
+CCS: m = 1, t = 2, S = [[0, 0, 0, 0, 0], [1]], c = (1, -1), d = 5
+x = 3, y = 243: thỏa True; y = 244: thỏa False
+R1CS cùng cổng: x2 = x·x, x4 = x2·x2, y = x4·x -> 3 ràng buộc, 2 biến trung gian

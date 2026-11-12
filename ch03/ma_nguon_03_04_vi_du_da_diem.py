@@ -1,4 +1,4 @@
-"""Ví dụ số Mục 3.2a: mở một đa thức bậc 3 tại hai điểm trên F_449.
+"""Ví dụ số Mục 3.2 (một đa thức, nhiều điểm): mở một đa thức bậc 3 tại hai điểm trên F_449.
 
 f(X) = X^3 + 17X + 23, S = {1, 2}, cửa sập τ = 10 (chỉ để minh họa).
 In Z_S, r(X), thương ψ(X) = (f - r)/Z_S và kiểm phương trình pairing
