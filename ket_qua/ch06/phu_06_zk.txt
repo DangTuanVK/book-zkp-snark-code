@@ -1,0 +1,11 @@
+(1) ζ = 343; giá trị mở nếu KHÔNG làm mù (β, γ, ζ lấy từ transcript seed 2019):
+    witness (17, 23)  a(ζ), b(ζ), c(ζ), z(ζω) = (103, 447, 368, 356)
+    witness (23, 17)  a(ζ), b(ζ), c(ζ), z(ζω) = (394, 87, 345, 187)
+    witness (28, 30)  a(ζ), b(ζ), c(ζ), z(ζω) = (389, 186, 138, 299)
+    witness (30, 28)  a(ζ), b(ζ), c(ζ), z(ζω) = (127, 355, 67, 300)
+    số bộ khác nhau: 4 / 4
+(2) witness (23, 17)  ρ' = [7, 160, 228, 447, 369, 19, 146, 202, 204, 342, 122] -> proof trùng proof của (17, 23): True, verify: True
+(2) witness (28, 30)  ρ' = [148, 46, 288, 124, 394, 152, 229, 172, 407, 67, 98] -> proof trùng proof của (17, 23): True, verify: True
+(2) witness (30, 28)  ρ' = [320, 67, 328, 185, 316, 287, 410, 396, 430, 338, 401] -> proof trùng proof của (17, 23): True, verify: True
+(3) z với 2 hệ số làm mù: hệ 3 phương trình (τ, ωτ, ζω) 2 ẩn có nghiệm? False
+    số điểm lộ của mỗi đa thức: a, b, c: 2 (τ, ζ); z: 3 (τ, ωτ qua t(τ), ζω); t_lo, t_mid, t_hi: 3 cam kết, 1 ràng buộc tổng

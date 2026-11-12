@@ -37,6 +37,6 @@ co_dinh = 3 * n - sum(len(cy) for cy in pk.cycles)
 print("ô cố định của σ (không sao chép):", co_dinh)
 assert circ.is_satisfied(a, b, cc, x) and n == 32 and int(om) == 221
 assert dem["nhân"] == 11
-# σ* là hoán vị của H ∪ k1H ∪ k2H (3n nhãn phân biệt)
+# σ* là hoán vị của tập nhãn H' = H + k1H + k2H (3n nhãn phân biệt)
 assert sorted(int(v) for v in pk.sstar) == sorted(int(v) for v in pk.ids)
 assert len(set(int(v) for v in pk.ids)) == 3 * n

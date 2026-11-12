@@ -1,0 +1,4 @@
+Số N có nghiệm giả: 93 / 448
+Số N có nghiệm giả nhưng KHÔNG có phân tích thật trong [2, 31]^2: 53
+  N = 37 (số nguyên tố): witness [(18, 27), (27, 18)]
+  N = 47 (số nguyên tố): witness [(16, 31), (31, 16)]

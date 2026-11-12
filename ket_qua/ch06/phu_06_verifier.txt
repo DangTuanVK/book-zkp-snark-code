@@ -1,0 +1,6 @@
+(1) bậc r(X) = 37; r(ζ) = 0; bậc W_ζ, W_ζω = 36, 33
+    r_0 (bước 8) = 124; v = 318, u = 286; [E]_1 = 375·[1]_1
+(2) witness sai a19 = 18: bậc phần dư R = 31; số nghiệm của R trên F_449 = 31, trong đó 30 nằm trong H
+    các hàng j có R(ω^j) ≠ 0: [19, 31]
+    cận (n - 1)/r = 0.0690; tỉ lệ nghiệm 31/449 = 0.0690
+(3) Prover gian bỏ phần dư, 600 nhãn: lọt 39 (6.5%), trong đó ζ ∈ H: 39; ζ = 1 (bỏ lượt): 1

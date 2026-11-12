@@ -1,0 +1,3 @@
+n = 64; (bậc rem, số nghiệm trong H, số nghiệm ngoài H) qua 40 lần: [(63, 62, 1)]
+lọt 7/40: ζ ∈ H ở 6 lần [9, 11, 18, 26, 29, 38]; ζ ∉ H nhưng rem(ζ) = 0 ở 1 lần [(34, 422)]
+xác suất lọt mỗi lần = (|H| + 1)/r = 65/449 ≈ 14.5%

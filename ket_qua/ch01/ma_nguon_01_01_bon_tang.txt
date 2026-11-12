@@ -1,0 +1,5 @@
+Tầng 1: R1CS 13 ràng buộc, 14 biến; thỏa: True
+        Plonkish 32 hàng (dùng 20); thỏa: True
+Tầng 2: n = 32, ω_32 = 221, bậc f_a = 31
+Tầng 3: C_a = [f_a(τ)]_1 = (2103, 3742)
+Tầng 4: ζ = 251, f_a(ζ) = 103, kiểm mở KZG: True

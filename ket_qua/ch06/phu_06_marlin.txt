@@ -1,0 +1,8 @@
+R1CS: 13 ràng buộc x 14 biến; ω_16 = 349; số ô khác 0 của A, B, C = [21, 13, 13] -> |K| = 32
+  A: 21 ô; M̂ khôi phục đúng mọi ô trên H x H: True
+     ví dụ ô cuối của A: hàng 12, cột 2, giá trị 1 -> row = ω^12 = 382, col = ω^2 = 122, u_H(r,r) = 174, u_H(c,c) = 324, val = 161
+  B: 13 ô; M̂ khôi phục đúng mọi ô trên H x H: True
+  C: 13 ô; M̂ khôi phục đúng mọi ô trên H x H: True
+indexer Marlin: 3 ma trận x 3 đa thức (row, col, val) bậc < |K| = 32 -> 9 đa thức
+so với PLONK (cùng mạch): 8 đa thức tiền xử lý bậc < n = 32
+số ô khác 0 tổng cộng: 47; số ô của ma trận đầy đủ 16 x 16 x 3 = 768
