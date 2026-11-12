@@ -12,7 +12,7 @@ build, chạy được; bài lab đầy đủ sẽ viết ở đợt sau.
 
 ## Môi trường
 
-Toolchain cài bằng `rustup` dưới `<THU_MUC_LAM_VIEC>/.rust/`
+Toolchain cài bằng `rustup` dưới thư mục `$RUST_ROOT` (mặc định `~/.rust`, đặt riêng trong `rust/env.local.sh`)
 (không ghi vào `~/.rustup`, `~/.cargo`). Mọi lệnh cần nạp `env.sh` trước:
 
 ```bash

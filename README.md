@@ -49,7 +49,7 @@ Python 3.11, **chỉ thư viện chuẩn** (không numpy) để bạn đọc the
 phép tính. Trên máy tác giả dùng môi trường mamba `pqc`:
 
 ```bash
-PY=<THU_MUC_LAM_VIEC>/.local/share/mamba/envs/pqc/bin/python
+PY=python3   # Python ≥ 3.8; tác giả dùng 3.11
 ```
 
 Python hệ thống 3.6 không được hỗ trợ.

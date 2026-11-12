@@ -6,9 +6,7 @@ set -e
 TB=$(cd "$(dirname "$0")" && pwd)
 RTL=$(dirname "$TB")
 KQ=$(dirname "$RTL")/ket_qua/ch11
-export SNPSLMD_LICENSE_FILE=${SNPSLMD_LICENSE_FILE:-<may-chu-license>}
-export VCS_HOME=${VCS_HOME:-<SYNOPSYS>/vcs/current}
-VCS=<SYNOPSYS>/vcs/current/bin/vcs
+. "$RTL/env.sh"
 mkdir -p "$KQ"
 CFGS=${*:-"montmul_w16 montmul_w32 montmul_w64 montmul_w256 ntt_bfly_f449 ntt_bfly_gl64"}
 for c in $CFGS; do

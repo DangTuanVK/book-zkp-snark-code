@@ -5,8 +5,7 @@
 # Gom kết quả: ch11/tong_hop_dc.py -> ket_qua/ch11/tong_hop.csv và báo cáo gốc.
 set -e
 DCDIR=$(cd "$(dirname "$0")" && pwd)
-export SNPSLMD_LICENSE_FILE=${SNPSLMD_LICENSE_FILE:-<may-chu-license>}
-DC=<SYNOPSYS>/syn/V-2023.12-SP3/bin/dc_shell
+. "$(dirname "$DCDIR")/env.sh"
 
 # tên -> "P0 NSWEEP NREFINE" (P0: chu kỳ khởi đầu, ns; chọn hơi lỏng so với độ trễ dự kiến)
 declare -A CFG=(

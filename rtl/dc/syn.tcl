@@ -8,7 +8,11 @@
 # vào <TOP>_T<chu kỳ>_*.rpt và một dòng kết quả vào ket_qua.txt.
 # Cách siết: lần sau đặt chu kỳ = (độ trễ đạt được của lần trước) x SHRINK;
 # dừng khi slack âm (vi phạm) hoặc hết NSWEEP lần; sau đó chia đôi NREFINE lần.
-set LIB_DIR <SYNOPSYS>/syn/V-2023.12-SP3/libraries/syn
+if {[info exists ::env(SYN_LIB_DIR)] && $::env(SYN_LIB_DIR) ne ""} {
+    set LIB_DIR $::env(SYN_LIB_DIR)
+} else {
+    error "Cần biến môi trường SYN_LIB_DIR (thư mục chứa lsi_10k.db); xem rtl/env.sh"
+}
 set RTL ../../..
 set search_path    [list . $LIB_DIR]
 set target_library lsi_10k.db

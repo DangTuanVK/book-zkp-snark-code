@@ -8,3 +8,8 @@ rtl/**/*.fsdb
 rtl/**/ucli.key
 rtl/**/work/
 rtl/**/*.log
+
+# Cấu hình riêng từng máy và báo cáo nội bộ: không đưa vào git
+env.local.sh
+**/env.local.sh
+ket_qua/bao_cao_dot/

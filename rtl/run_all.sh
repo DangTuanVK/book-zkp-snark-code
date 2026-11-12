@@ -9,7 +9,7 @@
 set -e
 RTL=$(cd "$(dirname "$0")" && pwd)
 GOC=$(dirname "$RTL")
-PY=${PY:-<THU_MUC_LAM_VIEC>/.local/share/mamba/envs/pqc/bin/python}
+. "$RTL/env.sh"
 mkdir -p "$GOC/ket_qua/ch11"
 "$PY" "$GOC/ch11/sinh_vector_rtl.py" | tee "$GOC/ket_qua/ch11/sinh_vector.txt"
 "$RTL/tb/run_sim.sh" | tee "$GOC/ket_qua/ch11/mo_phong.txt"
