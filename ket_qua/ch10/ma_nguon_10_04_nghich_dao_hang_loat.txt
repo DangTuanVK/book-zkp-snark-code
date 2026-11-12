@@ -1,0 +1,9 @@
+F_449, a = [2, 3, 5, 7, 11, 13, 17, 23]
+a^{-1} = [225, 150, 90, 385, 245, 380, 317, 410]
+chi phí: 21 phép nhân + 1 nghịch đảo (3(n-1) = 21)
+
+BLS12-381 p (381 bit), n = 4096:
+  từng phần tử: 4096 nghịch đảo, 97.5 ms
+  hàng loạt   : 1 nghịch đảo + 12285 phép nhân, 9.0 ms (nhanh hơn 10.8 lần)
+  một nghịch đảo ≈ 31 phép nhân mod p (Python: 22.55 µs / 0.722 µs)
+  (thời gian phụ thuộc máy và tải; tỉ lệ mới là điều cần chú ý)

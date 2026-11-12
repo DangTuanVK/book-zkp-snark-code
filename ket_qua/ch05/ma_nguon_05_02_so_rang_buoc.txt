@@ -1,0 +1,13 @@
+== Mạch gọn (mặc định) ==
+R1CS    : m = 13, n = 14 (ℓ = 1, witness = 12), bậc 2, nnz(A,B,C) = [21, 13, 13], {'bool': 10, 'recompose': 2, 'mul': 1}
+Plonkish: 20 hàng (đệm 2^k: 32), 11 cổng nhân, 9 cổng tuyến tính/công khai, 6 dây tạm, 39 ràng buộc sao chép, bậc cổng 2
+CCS     : m = 13, n = 14, t = 3 ma trận, q = 2 đa tập [[0, 1], [2]], c = [1, -1], bậc d = 2
+QAP/Groth16: m + ℓ + 1 = 15 hàng -> miền H cỡ n = 16
+Witness (17, 23) thỏa R1CS / Plonkish / CCS: (True, True, True)
+== Mạch tường minh a,b >= 2 ==
+R1CS    : m = 15, n = 16 (ℓ = 1, witness = 14), bậc 2, nnz(A,B,C) = [25, 15, 15], {'bool': 10, 'recompose': 2, 'nonzero': 2, 'mul': 1}
+Plonkish: 22 hàng (đệm 2^k: 32), 13 cổng nhân, 9 cổng tuyến tính/công khai, 6 dây tạm, 41 ràng buộc sao chép, bậc cổng 2
+CCS     : m = 15, n = 16, t = 3 ma trận, q = 2 đa tập [[0, 1], [2]], c = [1, -1], bậc d = 2
+QAP/Groth16: m + ℓ + 1 = 17 hàng -> miền H cỡ n = 32
+Witness (17, 23) thỏa R1CS / Plonkish / CCS: (True, True, True)
+Kiểm: với a, b ∈ [0, 31], a ∈ {0, 1} không thể cho a·b ≡ 391 (mod 449)

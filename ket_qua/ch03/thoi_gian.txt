@@ -1,0 +1,8 @@
+# Thời gian chạy (wall) từng file ch03, máy chủ dùng chung, 2026-11-12, Python 3.11.15
+ma_nguon_03_01_vi_du_da_diem     0.02 s
+ma_nguon_03_02_shplonk           0.03 s
+ma_nguon_03_03_ceremony          0.05 s
+ma_nguon_03_04_dem_chi_phi       0.17 s
+ma_nguon_03_05_pst               0.02 s
+ma_nguon_03_06_hiding            0.02 s
+ma_nguon_03_07_sai_so_toy        29.41 s

@@ -1,0 +1,9 @@
+G = [(4750, 468), (209, 3380), (3193, 851), (2668, 4275)]
+Cam kết hàng C_0..C_3 = [(67, 1527), (4750, 468), (71, 2774), (209, 3380)]
+L = eq(·, (2,3)) = [2, 446, 445, 6]   R = eq(·, (5,7)) = [24, 421, 419, 35]
+w = L^T·M = [444, 335, 30, 42]   v = <w, R> = 50
+C_w = Σ L_i·C_i = (4191, 3142)
+v = 50  (mle.evaluate: 50 )  Verifier chấp nhận: True
+Kích thước: {'commit_group': 4, 'proof_group': 4, 'proof_field': 1}  Verifier: {'smul': 16, 'add': 12, 'fmul': 10}
+Khai sai v + 1 -> chấp nhận: False
+log_{G1}(G_0) = 236  (vét cạn — toy không có binding thật)

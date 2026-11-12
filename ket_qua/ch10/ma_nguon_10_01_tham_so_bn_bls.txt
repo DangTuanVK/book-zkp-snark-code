@@ -1,0 +1,28 @@
+=== BN254: u = 0x44e992b44a6909f1 (63 bit, trọng số Hamming 28)
+p = 21888242871839275222246405745257275088696311157297823662689037894645226208583
+  = 0x30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd47 (254 bit), p mod 4 = 3, p mod 3 = 1
+r = 21888242871839275222246405745257275088548364400416034343698204186575808495617
+  = 0x30644e72e131a029b85045b68181585d2833e84879b9709143e1f593f0000001 (254 bit)
+t = 147946756881789318990833708069417712967, #E = h·r với h = 1
+2-adicity(r - 1) = 28, 2-adicity(p - 1) = 1
+bậc nhúng k = 12; r ∤ p^j - 1 với mọi j < 12: True
+(p^12-1)/r = (p^6-1)(p^2+1)·Φ12(p)/r: True | r | Φ12(p): True
+số bit: p^12 = 3044, (p^12-1)/r = 2790, phần dễ = 2029, phần khó = 761
+Miller–Rabin (40 cơ sở): p nguyên tố = True, r nguyên tố = True
+khớp arkworks: p = True, r = True
+NAF ATE_LOOP_COUNT của arkworks = 6u + 2: True (22 chữ số khác 0)
+
+=== BLS12-381: u = -0xd201000000010000 (64 bit, trọng số Hamming 6)
+p = 4002409555221667393417789825735904156556882819939007885332058136124031650490837864442687629129015664037894272559787
+  = 0x1a0111ea397fe69a4b1ba7b6434bacd764774b84f38512bf6730d2a0f6b0f6241eabfffeb153ffffb9feffffffffaaab (381 bit), p mod 4 = 3, p mod 3 = 1
+r = 52435875175126190479447740508185965837690552500527637822603658699938581184513
+  = 0x73eda753299d7d483339d80809a1d80553bda402fffe5bfeffffffff00000001 (255 bit)
+t = -15132376222941642751, #E = h·r với h = 76329603384216526031706109802092473003
+2-adicity(r - 1) = 32, 2-adicity(p - 1) = 1
+bậc nhúng k = 12; r ∤ p^j - 1 với mọi j < 12: True
+(p^12-1)/r = (p^6-1)(p^2+1)·Φ12(p)/r: True | r | Φ12(p): True
+số bit: p^12 = 4569, (p^12-1)/r = 4314, phần dễ = 3046, phần khó = 1268
+Miller–Rabin (40 cơ sở): p nguyên tố = True, r nguyên tố = True
+khớp arkworks: p = True, r = True
+h = (u-1)^2/3 khớp COFACTOR của arkworks: True (126 bit)
+

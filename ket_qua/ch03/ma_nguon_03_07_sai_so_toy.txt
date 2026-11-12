@@ -1,0 +1,5 @@
+N = 2000 lần thử, kỳ vọng N/449 = 4.45
+  batch-1d  lọt 4 lần (0.200%)
+  gwc       lọt 5 lần (0.250%)
+  shplonk   lọt 7 lần (0.350%)
+thời gian: 29.4 s

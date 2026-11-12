@@ -1,0 +1,16 @@
+Bảng nhân F_4:
+  0       | 0        0        0        0       
+  1       | 0        1        X0       1 + X0  
+  X0      | 0        X0       1 + X0   1       
+  1 + X0  | 0        1 + X0   1        X0      
+a = 1 + X0 + X0·X1   b = X0 + X0·X1
+a0 = 1 + X0  a1 = X0  b0 = X0  b1 = X0  (thuộc F_4)
+  a0b0       = 1
+  a1b1       = 1 + X0
+  a0b1+a1b0  = X0
+  a1b1*c     = 1
+Hệ số tự do = a0b0 + a1b1          = X0
+Hệ số của X1 = a0b1 + a1b0 + a1b1·X0 = 1 + X0
+a·b = X0 + X1 + X0·X1  (0b1110)
+a^-1 = X1 + X0·X1  (0b1100);  a·a^-1 = 1
+Trong F_256: 0b00001110  = a·b nhúng vào F_256

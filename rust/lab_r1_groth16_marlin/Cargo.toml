@@ -2,6 +2,7 @@
 name = "lab_r1_groth16_marlin"
 version = "0.1.0"
 edition = "2024"
+default-run = "lab_r1_groth16_marlin"
 
 [dependencies]
 ark-bls12-381 = "0.6"
@@ -20,3 +21,4 @@ ark-poly-v03 = { package = "ark-poly", version = "0.3" }
 ark-relations-v03 = { package = "ark-relations", version = "0.3" }
 ark-std-v03 = { package = "ark-std", version = "0.3" }
 blake2-v09 = { package = "blake2", version = "0.9" }
+ark-serialize-v03 = { package = "ark-serialize", version = "0.3" }

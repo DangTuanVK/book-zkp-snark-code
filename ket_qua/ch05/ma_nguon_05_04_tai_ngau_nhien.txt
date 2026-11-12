@@ -1,0 +1,5 @@
+π  = A (819, 2538), B (3387, 957), C (3887, 3457)
+π' = A (4324, 392), B (740, 3049), C (4191, 3142)
+π' khác π: True | verify(π'): True
+chỉ sửa C' = C + sA (không bù B): False
+thêm 4 cặp (r, s) khác, số proof verify đúng: 4

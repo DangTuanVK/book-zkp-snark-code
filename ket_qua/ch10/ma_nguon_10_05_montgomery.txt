@@ -1,0 +1,9 @@
+p = 449, R = 2^9 = 512, p' = -p^{-1} mod R = 447, R mod p = 63, R^2 mod p = 377
+ã = 17·R mod p = 173, b̃ = 23·R mod p = 102
+T = ã·b̃ = 17646; m = (T mod R)·p' mod R = 402; t = (T + m·p)/R = 387 (< p, không trừ)
+REDC(T) = 387 = 391·R mod p; from_mont -> 391
+vét cạn 449^2 = 201601 cặp: 0 lỗi
+
+Montgomery(p = 381 bit, R = 2^384), s = 6 từ: 2000 phép nhân ngẫu nhiên khớp a·b mod p
+CIOS: 78 phép nhân từ máy 64x64 (2s^2 + s = 78)
+tỉ lệ REDC cần bước trừ cuối: 2.0% (trên 8000 lần REDC: 2 to_mont + mul + from_mont mỗi vòng)

@@ -1,0 +1,13 @@
+== Kịch bản: ba người trung thực
+  người 1: HỢP LỆ  (20 pairing)
+  người 2: HỢP LỆ  (20 pairing)
+  người 3: HỢP LỆ  (20 pairing)
+  tau cuối = 17·23·31 mod 449 = 447; [tau]_1 khớp: True
+== Kịch bản: người 2 thay [tau^5]_1
+  người 1: HỢP LỆ  (20 pairing)
+  người 2: K5: sai lũy thừa tại i = 4; K5: sai lũy thừa tại i = 5  (20 pairing)
+  người 3: HỢP LỆ  (20 pairing)
+== Kịch bản: người 2 bỏ lịch sử, dựng SRS từ tau' = 99
+  người 1: HỢP LỆ  (20 pairing)
+  người 2: K2: không nối tiếp đóng góp trước  (20 pairing)
+  người 3: HỢP LỆ  (20 pairing)

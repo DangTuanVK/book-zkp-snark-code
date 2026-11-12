@@ -10,3 +10,7 @@ ark-ec = { version = "0.6", features = ["parallel"] }
 ark-ff = { version = "0.6", features = ["parallel"] }
 ark-poly = { version = "0.6", features = ["parallel"] }
 ark-std = { version = "0.6", features = ["parallel"] }
+# BN254 dùng để đo pairing so sánh với BLS12-381 (Ch.10) và đối chiếu hằng số u
+ark-bn254 = "0.6"
+# Đọc số luồng thật (tôn trọng RAYON_NUM_THREADS)
+rayon = "1"

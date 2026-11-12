@@ -1,0 +1,8 @@
+p =  7: ξ không chính phương = False, không lập phương = True
+p = 19: ξ không chính phương = True, không lập phương = True
+nhân F_{p^12}: Karatsuba 54 phép nhân F_p, trường học 144
+nghịch đảo F_{p^12}: 112 phép nhân F_p + 1 nghịch đảo F_p
+tiên đề (giao hoán, kết hợp, phân phối, đơn vị, nghịch đảo): đạt trên 200 mẫu
+w^6 = [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] (= ξ = 1 + u)
+k nhỏ nhất với w^(p^k) = w: k = 12 -> [F_p(w) : F_p] = 12
+x^(p^12) = x, x^(p^12 - 1) = 1, (ab)^p = a^p b^p: đạt; |F_{p^12}| = 19^12 = 2213314919066161

@@ -1,0 +1,7 @@
+H = (3387, 4430) (sau 2 lần thử băm)
+KZG thường: C = (752, 513) (hai lần cam kết f cho cùng C)
+Hiding: C_1 = (2103, 3742), C_2 = (2602, 2868) (cùng f, khác f̂)
+mở tại z = 1: y = 41, ŷ = 247, W = (2858, 702), verify = True
+verify với y sai lệch 1 = False
+HẠN CHẾ TOY: vét cạn 449 phần tử tìm được log_G(H) = 23
+biết β: mở C_1 tại z = 1 thành y' = 100 với ŷ' = 303 -> verify = True

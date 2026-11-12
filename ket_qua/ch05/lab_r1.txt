@@ -1,0 +1,32 @@
+# Lab R1: Groth16 (ark-groth16 0.6) và Marlin (ark-marlin 0.3), BLS12-381
+# Thời gian: trung vị của 5 lần đo (ms). Máy: ket_qua/may_do.txt (máy dùng chung).
+# setup: Groth16 = CRS riêng cho mạch; Marlin = index từ SRS phổ quát (SRS: cột srs, đo 1 lần)
+# Lab R1 bắt đầu 2026-11-12 13:55:30 +0700; uptime:  13:55:30 up 26 days,  1:55,  5 users,  load average: 9.21, 8.80, 5.90
+# rustc: rustc 1.99.1 (58cf8f9c3 2026-10-13)
+# kết thúc 2026-11-12 14:05:13 +0700; uptime:  14:05:13 up 26 days,  2:05,  5 users,  load average: 8.86, 9.26, 7.66
+hệ       luồng   k bản sao ràng b.    miền      setup      prove    verify       srs   byte
+groth16  16     10     73     949    1024     21.670     11.688     2.549         -    192
+marlin   16     10     73     949    1024     79.431    111.658     9.099    32.029    951
+groth16  16     12    292    3796    4096     50.563     22.897     4.227         -    192
+marlin   16     12    292    3796    4096    237.067    336.248     8.162    94.706    951
+groth16  16     14   1170   15210   16384    145.703     64.732    10.162         -    192
+marlin   16     14   1170   15210   16384    878.675   1161.041     8.474   287.304    951
+groth16  16     16   4681   60853   65536    495.496    153.911    31.801         -    192
+marlin   16     16   4681   60853   65536   3246.048   4459.909     9.815   981.398    951
+groth16  1      10     73     949    1024    177.776     29.166     2.193         -    192
+marlin   1      10     73     949    1024    729.280    966.470     8.020   316.223    951
+groth16  1      12    292    3796    4096    561.998     92.960     3.520         -    192
+marlin   1      12    292    3796    4096   2299.296   3075.617     8.121  1055.062    951
+groth16  1      14   1170   15210   16384   1902.013    323.099     8.834         -    192
+marlin   1      14   1170   15210   16384   7961.295  10372.221     8.664  3759.715    951
+groth16  1      16   4681   60853   65536   6663.065   1150.129    29.952         -    192
+marlin   1      16   4681   60853   65536  27895.353  36120.012    10.662 13081.201    951
+# Tỉ lệ Marlin/Groth16 (prove), cùng k và số luồng:
+#   luồng 1, k = 10: prove x33.1, setup/index x4.1, verify x3.7
+#   luồng 1, k = 12: prove x33.1, setup/index x4.1, verify x2.3
+#   luồng 1, k = 14: prove x32.1, setup/index x4.2, verify x1.0
+#   luồng 1, k = 16: prove x31.4, setup/index x4.2, verify x0.4
+#   luồng 16, k = 10: prove x9.6, setup/index x3.7, verify x3.6
+#   luồng 16, k = 12: prove x14.7, setup/index x4.7, verify x1.9
+#   luồng 16, k = 14: prove x17.9, setup/index x6.0, verify x0.8
+#   luồng 16, k = 16: prove x29.0, setup/index x6.6, verify x0.3

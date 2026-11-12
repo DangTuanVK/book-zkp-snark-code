@@ -1,0 +1,9 @@
+bảng q             = [17, 23, 2, 31]  q(z) = q(3, 4) = 272
+w_1 trên X_2∈{0,1} = [434, 8]  (= q(1, X_2) - q(0, X_2))
+w_2 (hằng)         = [75]  (= hiệu sau khi cố định x_1 = 3)
+kiểm q(X) - v = Σ (X_i - z_i) w_i tại X = (100, 200): 118 = 118
+SRS tables[0] = [eq(b, tau)]_1 với eq(b, tau) = [20, 425, 424, 30]
+C = (1261, 5313)  W_1 = (5044, 3349)  W_2 = (2917, 1739)
+verify = True ; prover MSM cỡ [2, 1] ; verifier pairing=3, msm=3, msm_size=6, smul=0, add=41
+verify với v sai lệch 1 = False
+3 biến: q(10,20,30) = 315 ; proof 3 phần tử G1; verify = True

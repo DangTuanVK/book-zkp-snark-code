@@ -14,6 +14,11 @@
    "mo_ta": "Đường cong toy E: y^2 = x^3 + x trên F_q, q = 5387 (siêu kỳ dị)."
   },
   {
+   "module": "snarklib.dsl",
+   "file": "snarklib/dsl.py",
+   "mo_ta": "DSL tí hon mô tả mạch số học và biên dịch sang R1CS, Plonkish, CCS."
+  },
+  {
    "module": "snarklib.fft",
    "file": "snarklib/fft.py",
    "mo_ta": "NTT/INTT radix-2 (Cooley–Tukey) trên F_p có 2-adicity đủ lớn."
@@ -24,9 +29,39 @@
    "mo_ta": "Trường hữu hạn F_p và trường mở rộng bậc 2 F_q[i]/(i^2 + 1)."
   },
   {
+   "module": "snarklib.gf2tower",
+   "file": "snarklib/gf2tower.py",
+   "mo_ta": "Trường tháp nhị phân F_2 ⊂ F_4 ⊂ F_16 ⊂ F_256 theo cấu trúc Wiedemann (Binius)."
+  },
+  {
+   "module": "snarklib.groth16",
+   "file": "snarklib/groth16.py",
+   "mo_ta": "Groth16 (Groth, EUROCRYPT 2016, Mục 3.2) trên đường cong toy của sách."
+  },
+  {
    "module": "snarklib.hang_so",
    "file": "snarklib/hang_so.py",
    "mo_ta": "Tính mọi hằng số xuyên suốt của sách bằng chính snarklib và ghi ket_qua/hang_so.txt."
+  },
+  {
+   "module": "snarklib.hyrax",
+   "file": "snarklib/hyrax.py",
+   "mo_ta": "PCS kiểu Hyrax cho đa thức đa tuyến tính: cam kết ma trận √n × √n."
+  },
+  {
+   "module": "snarklib.ipa",
+   "file": "snarklib/ipa.py",
+   "mo_ta": "Inner Product Argument (IPA) kiểu Bulletproofs và PCS dựng từ IPA."
+  },
+  {
+   "module": "snarklib.kzg",
+   "file": "snarklib/kzg.py",
+   "mo_ta": "Cam kết đa thức KZG và các biến thể mở nhiều đa thức/nhiều điểm (Chương 3)."
+  },
+  {
+   "module": "snarklib.ligero",
+   "file": "snarklib/ligero.py",
+   "mo_ta": "PCS kiểu Ligero cho đa thức đa tuyến tính (mã Reed–Solomon + Merkle)."
   },
   {
    "module": "snarklib.merkle",
@@ -39,9 +74,29 @@
    "mo_ta": "Mở rộng đa tuyến tính (MLE) của bảng 2^l giá trị."
   },
   {
+   "module": "snarklib.montgomery",
+   "file": "snarklib/montgomery.py",
+   "mo_ta": "Số học Montgomery: REDC, nhân Montgomery, chuyển vào/ra dạng Montgomery."
+  },
+  {
+   "module": "snarklib.opcount",
+   "file": "snarklib/opcount.py",
+   "mo_ta": "Bộ đếm phép toán nhóm và pairing dùng chung cho toàn sách."
+  },
+  {
    "module": "snarklib.pairing",
    "file": "snarklib/pairing.py",
    "mo_ta": "Pairing Tate rút gọn (Type 1) trên nhóm con bậc r = 449 của E: y^2 = x^3 + x / F_5387."
+  },
+  {
+   "module": "snarklib.pedersen",
+   "file": "snarklib/pedersen.py",
+   "mo_ta": "Cam kết Pedersen véc-tơ trên nhóm con bậc r = 449 của đường cong toy."
+  },
+  {
+   "module": "snarklib.pippenger",
+   "file": "snarklib/pippenger.py",
+   "mo_ta": "MSM (multi-scalar multiplication) Σ s_i·P_i: Pippenger (phương pháp xô) và ngây thơ."
   },
   {
    "module": "snarklib.plonkish",
@@ -52,6 +107,11 @@
    "module": "snarklib.poly",
    "file": "snarklib/poly.py",
    "mo_ta": "Đa thức một biến trên F_p."
+  },
+  {
+   "module": "snarklib.pst",
+   "file": "snarklib/pst.py",
+   "mo_ta": "KZG đa tuyến tính của Papamanthou–Shi–Tamassia (PST13), theo trình bày ở"
   },
   {
    "module": "snarklib.r1cs",
@@ -168,13 +228,81 @@
     "test_sensitivity",
     "test_distribution"
    ]
+  },
+  {
+   "file": "tests/test_ch03_kzg.py"
+  },
+  {
+   "file": "tests/test_ch04_gf2tower.py"
+  },
+  {
+   "file": "tests/test_ch04_hyrax.py"
+  },
+  {
+   "file": "tests/test_ch04_ipa.py"
+  },
+  {
+   "file": "tests/test_ch04_ligero.py"
+  },
+  {
+   "file": "tests/test_ch05_dsl_groth16.py"
+  },
+  {
+   "file": "tests/test_ch10_montgomery.py"
+  },
+  {
+   "file": "tests/test_ch10_pippenger.py"
+  },
+  {
+   "file": "tests/test_ch10_tham_so.py"
+  },
+  {
+   "file": "tests/test_ch10_thap.py"
   }
  ],
  "ket_qua": [
   "ket_qua/hang_so.txt",
   "ket_qua/tests.txt"
  ],
- "ma_nguon": [],
+ "ma_nguon": {
+  "ch03": [
+   "ch03/ma_nguon_03_01_vi_du_da_diem.py",
+   "ch03/ma_nguon_03_02_shplonk.py",
+   "ch03/ma_nguon_03_03_ceremony.py",
+   "ch03/ma_nguon_03_04_dem_chi_phi.py",
+   "ch03/ma_nguon_03_05_pst.py",
+   "ch03/ma_nguon_03_06_hiding.py",
+   "ch03/ma_nguon_03_07_sai_so_toy.py"
+  ],
+  "ch04": [
+   "ch04/ma_nguon_04_01_ipa_mot_vong.py",
+   "ch04/ma_nguon_04_02_ligero.py",
+   "ch04/ma_nguon_04_03_kich_thuoc_proof.py",
+   "ch04/ma_nguon_04_04_nhan_f16_thap.py",
+   "ch04/ma_nguon_04_05_hyrax.py",
+   "ch04/ma_nguon_04_06_dem_phep_toan_ipa.py"
+  ],
+  "ch05": [
+   "ch05/lab_r1_tong_hop.py",
+   "ch05/ma_nguon_05_01_dsl_bien_dich.py",
+   "ch05/ma_nguon_05_02_so_rang_buoc.py",
+   "ch05/ma_nguon_05_03_groth16_prove.py",
+   "ch05/ma_nguon_05_04_tai_ngau_nhien.py",
+   "ch05/ma_nguon_05_05_mo_phong.py",
+   "ch05/vet_can_witness.py"
+  ],
+  "ch10": [
+   "ch10/bai_tap_cua_so_2_16.py",
+   "ch10/ho_duong_cong.py",
+   "ch10/ma_nguon_10_01_tham_so_bn_bls.py",
+   "ch10/ma_nguon_10_02_pippenger.py",
+   "ch10/ma_nguon_10_03_thap_fp12.py",
+   "ch10/ma_nguon_10_04_nghich_dao_hang_loat.py",
+   "ch10/ma_nguon_10_05_montgomery.py",
+   "ch10/ma_nguon_10_06_ntt_dem.py",
+   "ch10/thap_truong.py"
+  ]
+ },
  "rust": [],
  "rtl": []
 }

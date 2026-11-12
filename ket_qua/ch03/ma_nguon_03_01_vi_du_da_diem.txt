@@ -1,0 +1,16 @@
+f(X)        = 23 + 17·X + 1·X^3
+S           = [1, 2]  f(S) = [41, 65]
+Z_S(X)      = 2 + 446·X + 1·X^2
+r(X)        = 17 + 24·X
+psi(X)      = 3 + 1·X   (thương (f - r)/Z_S)
+q_1(X)      = 18 + 1·X + 1·X^2   (thương mở một điểm z = 1)
+tau = 10: f(tau) = 295, r(tau) = 257, Z_S(tau) = 72, psi(tau) = 13
+kiểm số: psi(tau)·Z_S(tau) + r(tau) = 295 = f(tau)
+G1          = (2658, 1349)
+C = [f(tau)]_1 = (752, 513)
+W = [psi(tau)]_1 = (3548, 1728)
+[r(tau)]_1  = (5365, 4531)
+[Z_S(tau)]_2 = (1088, 753)
+e(C - [r(tau)]_1, [1]_2) = 2104 + 3053·i
+e(W, [Z_S(tau)]_2)       = 2104 + 3053·i
+verify_multi(đúng) = True ; verify_multi(f(2) sai lệch 1) = False

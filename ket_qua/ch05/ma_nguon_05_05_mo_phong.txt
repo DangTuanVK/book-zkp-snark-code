@@ -1,0 +1,2 @@
+N = 391: proof mô phỏng A (3243, 4541), B (4324, 4995), C (1939, 679) -> verify: True
+N = 389: proof mô phỏng A (2426, 1654), B (2761, 3284), C (4296, 590) -> verify: True

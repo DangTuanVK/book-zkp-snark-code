@@ -1,0 +1,19 @@
+z = (1, N, a, b, a0, a1, a2, a3, a4, b0, b1, b2, b3, b4)
+R1CS: m = 13 ràng buộc, n = 14 biến (1 hằng + 1 công khai + 12 witness)
+   0 bool      (a0) * (a0) = (a0)
+   1 bool      (a1) * (a1) = (a1)
+   2 bool      (a2) * (a2) = (a2)
+   3 bool      (a3) * (a3) = (a3)
+   4 bool      (a4) * (a4) = (a4)
+   5 recompose (a0 + 2·a1 + 4·a2 + 8·a3 + 16·a4) * (1) = (a)
+   6 bool      (b0) * (b0) = (b0)
+   7 bool      (b1) * (b1) = (b1)
+   8 bool      (b2) * (b2) = (b2)
+   9 bool      (b3) * (b3) = (b3)
+  10 bool      (b4) * (b4) = (b4)
+  11 recompose (b0 + 2·b1 + 4·b2 + 8·b3 + 16·b4) * (1) = (b)
+  12 mul       (a) * (b) = (N)
+x = [391]
+w = [17, 23, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1]
+thỏa R1CS (17, 23): True
+thỏa R1CS (17, 24): False

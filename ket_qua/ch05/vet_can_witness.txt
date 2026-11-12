@@ -1,0 +1,9 @@
+Số cặp đã thử: 1024; số witness thỏa mạch: 4
+  (a, b) = (17, 23): a·b = 391 = 0·449 + 391
+  (a, b) = (23, 17): a·b = 391 = 0·449 + 391
+  (a, b) = (28, 30): a·b = 840 = 1·449 + 391
+  (a, b) = (30, 28): a·b = 840 = 1·449 + 391
+  Groth16 proof cho (17, 23): verify = True
+  Groth16 proof cho (23, 17): verify = True
+  Groth16 proof cho (28, 30): verify = True
+  Groth16 proof cho (30, 28): verify = True

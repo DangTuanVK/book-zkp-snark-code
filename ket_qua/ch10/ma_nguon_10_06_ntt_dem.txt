@@ -1,0 +1,3 @@
+F_449, n = 32: NTT 80 phép nhân bướm ((n/2)log n = 80), ngây thơ 1024 (n^2 = 1024), gấp 13 lần
+  khớp snarklib.fft.ntt; ω_32 = 221
+F_r BLS12-381, n = 1024: NTT 5120 phép nhân bướm ((n/2)log n = 5120), ngây thơ 1048576 (n^2 = 1048576), gấp 205 lần

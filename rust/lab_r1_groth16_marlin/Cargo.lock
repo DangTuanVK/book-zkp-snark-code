@@ -987,6 +987,7 @@ dependencies = [
  "ark-poly-commit",
  "ark-relations 0.3.0",
  "ark-relations 0.6.0",
+ "ark-serialize 0.3.0",
  "ark-serialize 0.6.0",
  "ark-snark",
  "ark-std 0.3.0",

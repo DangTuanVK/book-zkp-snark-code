@@ -1,0 +1,7 @@
+n,log2n,ipa_group,ipa_field,ipa_bytes,ipa_ver_smul,hyrax_commit_group,hyrax_proof_group,hyrax_proof_field,hyrax_proof_bytes,ligero_m,ligero_k,ligero_t,ligero_field,ligero_hash,ligero_bytes,ligero_ver_hash,ligero_ver_fmul
+8,3,6,1,224,18,2,4,1,160,2,4,8,24,32,1792,40,100
+16,4,8,1,288,28,4,4,1,160,4,4,8,40,32,2304,40,132
+32,5,10,1,352,46,4,6,1,224,4,8,8,48,40,2816,48,232
+64,6,12,1,416,80,8,6,1,224,8,8,8,80,40,3840,48,296
+128,7,14,1,480,146,8,8,1,288,8,16,8,96,48,4608,56,528
+256,8,16,1,544,276,16,8,1,288,16,16,8,160,48,6656,56,656

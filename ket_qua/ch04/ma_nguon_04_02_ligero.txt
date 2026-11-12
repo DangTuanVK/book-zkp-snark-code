@@ -1,0 +1,14 @@
+z = [1, 391, 17, 23, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0]
+Ma trận M (4 x 4): [[1, 391, 17, 23], [1, 0, 0, 0], [1, 1, 1, 1], [0, 1, 0, 0]]
+Hàng mã Enc(M[0]) (16 phần tử): [432, 267, 221, 249, 394, 59, 373, 328, 53, 291, 263, 187, 23, 285, 45, 138]
+Gốc Merkle: 1defab30138d3f13 ...
+r = [2, 3, 5, 7]  v = z~(r) = 50  (kiểm bằng mle.evaluate: 50 )
+u_prox = [61, 269, 134, 406]  u_eval = [444, 335, 30, 42]
+Cột được mở: [9, 14, 5, 13]
+  cột 9 = [291, 1, 300, 100]  đường Merkle dài 4
+  cột 14 = [45, 1, 169, 357]  đường Merkle dài 4
+  cột 5 = [59, 1, 134, 35]  đường Merkle dài 4
+  cột 13 = [285, 1, 73, 414]  đường Merkle dài 4
+Verifier chấp nhận: True  chi phí: {'hash': 20, 'fmul': 100}
+Kích thước proof: 24 phần tử trường + 16 giá trị băm
+Cột bị sửa -> chấp nhận: False

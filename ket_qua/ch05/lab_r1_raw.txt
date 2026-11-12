@@ -1,0 +1,38 @@
+# Lab R1 bắt đầu 2026-11-12 13:55:30 +0700; uptime:  13:55:30 up 26 days,  1:55,  5 users,  load average: 9.21, 8.80, 5.90
+# rustc: rustc 1.99.1 (58cf8f9c3 2026-10-13)
+# Lab R1: RAYON_NUM_THREADS = 16; số lần đo mỗi điểm = 5 (lấy trung vị)
+# cột: he,k,ban_sao,rang_buoc,bien_instance,bien_witness,mien,so_lan,setup_ms,prove_ms,verify_ms,proof_byte,dung,tai_truoc,tai_sau[,phu]
+# Groth16: setup = sinh CRS riêng cho mạch. Marlin: setup = index (chuyên biệt hóa từ SRS phổ quát);
+#          srs_ms = thời gian universal_setup (một lần); rang_buoc Marlin = trước khi đệm vuông; mien = |H| (cạnh ma trận sau đệm, làm tròn 2^j), mien_K = |K|
+CSV,groth16,10,73,949,74,876,1024,5,21.670,11.688,2.549,192,true,9.21 8.80 5.90,9.21 8.80 5.90
+CSV,marlin,10,73,949,74,876,1024,5,79.431,111.658,9.099,951,true,9.21 8.80 5.90,9.67 8.90 5.95,srs_ms=32.029,canh=1004,nnz=1533,mien_K=2048
+CSV,groth16,12,292,3796,293,3504,4096,5,50.563,22.897,4.227,192,true,9.67 8.90 5.95,9.67 8.90 5.95
+CSV,marlin,12,292,3796,293,3504,4096,5,237.067,336.248,8.162,951,true,9.67 8.90 5.95,9.67 8.90 5.95,srs_ms=94.706,canh=4016,nnz=6132,mien_K=8192
+CSV,groth16,14,1170,15210,1171,14040,16384,5,145.703,64.732,10.162,192,true,9.67 8.90 5.95,10.34 9.05 6.01
+CSV,marlin,14,1170,15210,1171,14040,16384,5,878.675,1161.041,8.474,951,true,10.34 9.05 6.01,10.41 9.12 6.07,srs_ms=287.304,canh=16088,nnz=24570,mien_K=32768
+CSV,groth16,16,4681,60853,4682,56172,65536,5,495.496,153.911,31.801,192,true,10.41 9.12 6.07,12.06 9.48 6.20
+CSV,marlin,16,4681,60853,4682,56172,65536,5,3246.048,4459.909,9.815,951,true,12.06 9.48 6.20,12.50 9.93 6.49,srs_ms=981.398,canh=64364,nnz=98301,mien_K=131072
+# giữa: 2026-11-12 13:56:31; uptime:  13:56:31 up 26 days,  1:56,  5 users,  load average: 12.50, 9.93, 6.49
+# Lab R1: RAYON_NUM_THREADS = 1; số lần đo mỗi điểm = 5 (lấy trung vị)
+# cột: he,k,ban_sao,rang_buoc,bien_instance,bien_witness,mien,so_lan,setup_ms,prove_ms,verify_ms,proof_byte,dung,tai_truoc,tai_sau[,phu]
+# Groth16: setup = sinh CRS riêng cho mạch. Marlin: setup = index (chuyên biệt hóa từ SRS phổ quát);
+#          srs_ms = thời gian universal_setup (một lần); rang_buoc Marlin = trước khi đệm vuông; mien = |H| (cạnh ma trận sau đệm, làm tròn 2^j), mien_K = |K|
+CSV,groth16,10,73,949,74,876,1024,5,177.776,29.166,2.193,192,true,12.50 9.93 6.49,12.50 9.93 6.49
+CSV,marlin,10,73,949,74,876,1024,5,729.280,966.470,8.020,951,true,12.50 9.93 6.49,12.16 9.94 6.53,srs_ms=316.223,canh=1004,nnz=1533,mien_K=2048
+CSV,groth16,12,292,3796,293,3504,4096,5,561.998,92.960,3.520,192,true,12.16 9.94 6.53,12.16 9.94 6.53
+CSV,marlin,12,292,3796,293,3504,4096,5,2299.296,3075.617,8.121,951,true,12.16 9.94 6.53,10.82 9.81 6.59,srs_ms=1055.062,canh=4016,nnz=6132,mien_K=8192
+CSV,groth16,14,1170,15210,1171,14040,16384,5,1902.013,323.099,8.834,192,true,10.82 9.81 6.59,10.51 9.76 6.61
+CSV,marlin,14,1170,15210,1171,14040,16384,5,7961.295,10372.221,8.664,951,true,10.51 9.76 6.61,9.81 9.74 6.91,srs_ms=3759.715,canh=16088,nnz=24570,mien_K=32768
+# xong 1 luồng k<=14: 2026-11-12 13:59:00; uptime:  13:59:00 up 26 days,  1:59,  5 users,  load average: 9.81, 9.74, 6.91
+# Lab R1: RAYON_NUM_THREADS = 1; số lần đo mỗi điểm = 5 (lấy trung vị)
+# cột: he,k,ban_sao,rang_buoc,bien_instance,bien_witness,mien,so_lan,setup_ms,prove_ms,verify_ms,proof_byte,dung,tai_truoc,tai_sau[,phu]
+# Groth16: setup = sinh CRS riêng cho mạch. Marlin: setup = index (chuyên biệt hóa từ SRS phổ quát);
+#          srs_ms = thời gian universal_setup (một lần); rang_buoc Marlin = trước khi đệm vuông; mien = |H| (cạnh ma trận sau đệm, làm tròn 2^j), mien_K = |K|
+CSV,groth16,16,4681,60853,4682,56172,65536,5,6663.065,1150.129,29.952,192,true,9.81 9.74 6.91,9.22 9.63 7.00
+# xong groth16 1 luồng 2^16: 2026-11-12 13:59:39; uptime:  13:59:39 up 26 days,  1:59,  5 users,  load average: 9.22, 9.63, 7.00
+# Lab R1: RAYON_NUM_THREADS = 1; số lần đo mỗi điểm = 5 (lấy trung vị)
+# cột: he,k,ban_sao,rang_buoc,bien_instance,bien_witness,mien,so_lan,setup_ms,prove_ms,verify_ms,proof_byte,dung,tai_truoc,tai_sau[,phu]
+# Groth16: setup = sinh CRS riêng cho mạch. Marlin: setup = index (chuyên biệt hóa từ SRS phổ quát);
+#          srs_ms = thời gian universal_setup (một lần); rang_buoc Marlin = trước khi đệm vuông; mien = |H| (cạnh ma trận sau đệm, làm tròn 2^j), mien_K = |K|
+CSV,marlin,16,4681,60853,4682,56172,65536,5,27895.353,36120.012,10.662,951,true,9.22 9.63 7.00,8.86 9.26 7.66,srs_ms=13081.201,canh=64364,nnz=98301,mien_K=131072
+# kết thúc 2026-11-12 14:05:13 +0700; uptime:  14:05:13 up 26 days,  2:05,  5 users,  load average: 8.86, 9.26, 7.66
