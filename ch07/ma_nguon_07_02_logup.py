@@ -39,7 +39,7 @@ def rang_buoc_C1(f, m, phi, lam, i):
             - q[i] * (lam + t[i]) + m[i] * (lam + f[i]))
 
 tr = Transcript(b"ch07/logup", 449)
-for a, b in [(17, 23), (40, 21)]:                   # 40·21 = 840 ≡ 391, 40 ∉ bảng
+for a, b in [(17, 23), (40, 21)]:                   # 40·21 = 840 ≡ 391, 40 không thuộc bảng
     f, m = cot_va_boi(a, b)
     tr.absorb(b"f,m", f + m)
     lam, rut = tr.challenge(b"lambda"), 1

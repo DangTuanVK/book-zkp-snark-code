@@ -2,7 +2,7 @@ Chu trình: E1/F_7: y^2=x^3+3, #E1=13 | E2/F_13: y^2=x^3+6, #E2=7 | bậc nhúng
 Chu trình: E1/F_13: y^2=x^3+2, #E1=19 | E2/F_19: y^2=x^3+2, #E2=13 | bậc nhúng 18, 12
 Chu trình: E1/F_31: y^2=x^3+3, #E1=43 | E2/F_43: y^2=x^3+7, #E2=31 | bậc nhúng 21, 30
 Điểm (1, 2) trên E1 có cấp 13
-Hasse: #E'(F_449) ∈ [408, 492] (|#E' - 450| ≤ 2√449 ≈ 42,4) -> không thể bằng 5387
+Hasse: #E'(F_449) in [408, 492] (|#E' - 450| ≤ 2√449 ≈ 42,4) -> không thể bằng 5387
 Chu trình cần q ≈ r; ở đây q/r ≈ 12, và #E = 12·449 không nguyên tố
 2-chain (E ngoài): E_in/F_449: y^2=x^3+1x+18, #E_in=485={5: 1, 97: 1}, nhóm con r'=97, bậc nhúng 3
 2-chain (E trong): E_out/F_129287: y^2=x^3+x, P = 24·5387 - 1, #E_out=129288, điểm (44065, 17530) cấp 5387, bậc nhúng 2

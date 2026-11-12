@@ -5,7 +5,7 @@ r = 2188824287183927522224640574525727508854836440041603434369820418657580849561
   = 0x30644e72e131a029b85045b68181585d2833e84879b9709143e1f593f0000001 (254 bit)
 t = 147946756881789318990833708069417712967, #E = h·r với h = 1
 2-adicity(r - 1) = 28, 2-adicity(p - 1) = 1
-bậc nhúng k = 12; r ∤ p^j - 1 với mọi j < 12: True
+bậc nhúng k = 12; r không chia hết p^j - 1 với mọi j < 12: True
 (p^12-1)/r = (p^6-1)(p^2+1)·Φ12(p)/r: True | r | Φ12(p): True
 số bit: p^12 = 3044, (p^12-1)/r = 2790, phần dễ = 2029, phần khó = 761
 Miller–Rabin (40 cơ sở): p nguyên tố = True, r nguyên tố = True
@@ -19,7 +19,7 @@ r = 5243587517512619047944774050818596583769055250052763782260365869993858118451
   = 0x73eda753299d7d483339d80809a1d80553bda402fffe5bfeffffffff00000001 (255 bit)
 t = -15132376222941642751, #E = h·r với h = 76329603384216526031706109802092473003
 2-adicity(r - 1) = 32, 2-adicity(p - 1) = 1
-bậc nhúng k = 12; r ∤ p^j - 1 với mọi j < 12: True
+bậc nhúng k = 12; r không chia hết p^j - 1 với mọi j < 12: True
 (p^12-1)/r = (p^6-1)(p^2+1)·Φ12(p)/r: True | r | Φ12(p): True
 số bit: p^12 = 4569, (p^12-1)/r = 4314, phần dễ = 3046, phần khó = 1268
 Miller–Rabin (40 cơ sở): p nguyên tố = True, r nguyên tố = True

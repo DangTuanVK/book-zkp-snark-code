@@ -381,7 +381,8 @@
       "ch07/ma_nguon_07_04_dac_so.py",
       "ch07/ma_nguon_07_05_bit_vs_lookup.py",
       "ch07/ma_nguon_07_06_kiem_pham_vi.py",
-      "ch07/ma_nguon_07_07_sai_so_toy.py"
+      "ch07/ma_nguon_07_07_sai_so_toy.py",
+      "ch07/phu_07_cq.py"
     ],
     "ch08": [
       "ch08/ma_nguon_08_01_mle_eq.py",
@@ -397,7 +398,9 @@
       "ch09/lab_r2_tong_hop.py",
       "ch09/ma_nguon_09_01_chu_trinh.py",
       "ch09/ma_nguon_09_02_nonnative.py",
-      "ch09/ma_nguon_09_03_fold_ccs.py"
+      "ch09/ma_nguon_09_03_fold_ccs.py",
+      "ch09/phu_09_01_halo_acc.py",
+      "ch09/phu_09_02_trich_xuat.py"
     ],
     "ch10": [
       "ch10/bai_tap_cua_so_2_16.py",
@@ -413,6 +416,8 @@
     "ch11": [
       "ch11/ma_nguon_11_01_montmul_tay.py",
       "ch11/ma_nguon_11_02_bfly_tay.py",
+      "ch11/phu_11_ho_so_prover.py",
+      "ch11/phu_11_uoc_luong.py",
       "ch11/sinh_vector_rtl.py",
       "ch11/tong_hop_dc.py"
     ],

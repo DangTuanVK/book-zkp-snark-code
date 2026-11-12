@@ -41,7 +41,7 @@ except ValueError as e:
     print("(28, 30) với bảng (19, 23): Prover trung thực dừng --", e)
 
 def dem_lot(bounds, a, b, sua=None):
-    """(số nhãn lọt, trong đó bao nhiêu lần ζ ∈ H, tức ζ^n = 1)."""
+    """(số nhãn lọt, trong đó bao nhiêu lần ζ in H, tức ζ^n = 1)."""
     lot = lot_H = 0
     for i, lab in enumerate(NHAN):
         _, pf, p, vk = chay(bounds, a, b, check=sua is not None, seed=50 + i, label=lab)
@@ -56,5 +56,5 @@ kq = {"(28, 30), bảng (19, 23), Prover gian": dem_lot((19, 23), 28, 30),
       "(40, 21), bảng {0..31}, Prover gian": dem_lot((31, 31), 40, 21),
       "(17, 23), sửa m̄ + 1": dem_lot((31, 31), 17, 23, sua_m)}
 for k, v in kq.items():
-    print("  thử âm %-38s: lọt %d/%d (ζ ∈ H: %d)" % (k, v[0], len(NHAN), v[1]))
+    print("  thử âm %-38s: lọt %d/%d (ζ in H: %d)" % (k, v[0], len(NHAN), v[1]))
 assert ok31 and all(v[0] <= 3 for v in kq.values())

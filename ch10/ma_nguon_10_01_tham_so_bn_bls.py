@@ -25,7 +25,7 @@ for ten, ho, u, p_ark, r_ark in CAC_DUONG_CONG:
     print("t = %d, #E = h·r với h = %d" % (t, h))
     print("2-adicity(r - 1) = %d, 2-adicity(p - 1) = %d" % (two_adicity(r - 1), two_adicity(p - 1)))
     k = bac_nhung(p, r)
-    print("bậc nhúng k = %d; r ∤ p^j - 1 với mọi j < 12:" % k,
+    print("bậc nhúng k = %d; r không chia hết p^j - 1 với mọi j < 12:" % k,
           all(pow(p, j, r) != 1 for j in range(1, 12)))
     # Phân tích số mũ cuối: phần dễ (p^6-1)(p^2+1), phần khó Φ12(p)/r
     phi12 = p**4 - p**2 + 1

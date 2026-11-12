@@ -1,4 +1,4 @@
-|f| = 451 (2 giá trị hợp lệ + 449 lần giá trị 40 ∉ bảng)
+|f| = 451 (2 giá trị hợp lệ + 449 lần giá trị 40 không thuộc bảng)
 hệ số cực điểm khác 0 (vế trái - vế phải): {}
 LogUp đúng tại 45/45 giá trị λ thử: True
 kiểm tích Π(λ + f_i) = Π(λ + t_j)^{m_j} đúng tại ít nhất một λ đó: False

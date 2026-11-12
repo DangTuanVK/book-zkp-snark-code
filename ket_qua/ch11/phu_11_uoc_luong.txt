@@ -1,0 +1,25 @@
+Phần 1: xung đột bucket, 2^16 phép cộng ngẫu nhiên đều trên 2^c - 1 bucket
+  c    L dừng in-order  hàng chờ 64 1-(1-1/B)^(L-1)
+  8    8        1.102        1.027          0.027
+  8   32        2.143        1.110          0.115
+ 12    8        1.006        1.002          0.002
+ 12   32        1.119        1.008          0.008
+ 16    8        1.001        1.000          0.000
+ 16   32        1.007        1.001          0.000
+
+Phần 2a: MSM, b = 254 bit, số phép cộng A(n,c) = ceil(b/c)·(n + 2^(c+1)), chu kỳ ~ A/P
+     n   c  A (cộng điểm)       P=1 chu kỳ      P=16 chu kỳ
+  2^16  12        1622016          1622016           101376
+  2^18  13        5570560          5570560           348160
+  2^20  16       18874368         18874368          1179648
+
+Phần 2b: đơn vị MSM giả định cho n = 2^20 (BN254 G1: p 254 bit vừa W = 256; lsi_10k, f >= 8.33 MHz)
+  diện tích 1 montmul W=256 = 622934; bộ cộng điểm = 10 montmul (pipeline, 1 phép cộng/chu kỳ)
+  P =  1 bộ cộng: 10 montmul, diện tích ~ 6.23e+06, chu kỳ ~ 18874368, thời gian ~ 2.27 s ở 8.33 MHz
+  P =  4 bộ cộng: 40 montmul, diện tích ~ 2.49e+07, chu kỳ ~ 4718592, thời gian ~ 0.57 s ở 8.33 MHz
+  P = 16 bộ cộng: 160 montmul, diện tích ~ 9.97e+07, chu kỳ ~ 1179648, thời gian ~ 0.14 s ở 8.33 MHz
+
+Phần 2c: NTT n = 2^20, (n/2)·log2 n butterfly, B butterfly song song
+  Goldilocks W=64, B =  1: 10485760 butterfly, chu kỳ ~ 10485760, thời gian ~ 573.6 ms ở 18.28 MHz, diện tích ~ 4.36e+04
+  Goldilocks W=64, B =  4: 10485760 butterfly, chu kỳ ~ 2621440, thời gian ~ 143.4 ms ở 18.28 MHz, diện tích ~ 1.74e+05
+  Goldilocks W=64, B = 16: 10485760 butterfly, chu kỳ ~ 655360, thời gian ~ 35.9 ms ở 18.28 MHz, diện tích ~ 6.98e+05

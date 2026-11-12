@@ -12,7 +12,7 @@ from snarklib.dsl import mach_phan_tich, Circuit
 
 def do(tao, verify):
     """tao(seed) -> Prover; seed 2019 (như Ch.6) hoặc seed nhỏ nhất mà Prover không
-    phải dừng lại và ζ ∉ H (ζ ∈ H, xác suất 32/449, làm nhiều vô hướng bằng 0)."""
+    phải dừng lại và ζ not in H (ζ in H, xác suất 32/449, làm nhiều vô hướng bằng 0)."""
     def tot(sd):
         p = tao(sd); p.run()
         return p.aborts == 0 and p.zeta ** p.n != 1

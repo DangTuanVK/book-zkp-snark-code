@@ -2,7 +2,7 @@
 
 Tra bảng f = (a, b) = (17, 23) vào t = {0..31}: bội m_17 = m_23 = 1. Kiểm
 Π (X + f_i) = Π (X + t_j)^{m_j} như đa thức và tại thách thức γ ngẫu nhiên;
-đổi f thành (17, 40) (40 ∉ t) thì đẳng thức sai. Tích tích lũy Z_i là cơ chế
+đổi f thành (17, 40) (40 không thuộc t) thì đẳng thức sai. Tích tích lũy Z_i là cơ chế
 z(X) của PLONK (Ch.6) áp cho hai dãy f và t^m.
 """
 import os, sys, random
@@ -32,7 +32,7 @@ f2 = [17, 40]
 g = ms.expand(t, m)                     # t^m = (17, 23)
 _, ngoai2 = ms.multiplicities(f2, t)
 hits, tong = ms.false_positive_rate(F, f2, g)
-print("f' = %s: ngoài bảng %s; số γ ∈ F_449 làm hai tích bằng nhau: %d/%d (cận deg/p = %d/449)"
+print("f' = %s: ngoài bảng %s; số γ in F_449 làm hai tích bằng nhau: %d/%d (cận deg/p = %d/449)"
       % (f2, ngoai2, hits, tong, len(f2)))
 
 # (4) tích tích lũy Z_0 = 1, Z_{i+1} = Z_i (γ + f_i)/(γ + g_i): không phụ thuộc thứ tự

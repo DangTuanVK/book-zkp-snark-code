@@ -12,7 +12,7 @@ from snarklib.logup import F
 
 # (1) phản ví dụ: f = (17, 23) ‖ 40 lặp 449 lần, bảng {0..31}
 kq = logup.characteristic_counterexample(honest=(17, 23), bad=40)
-print("|f| = %d (2 giá trị hợp lệ + %d lần giá trị %d ∉ bảng)"
+print("|f| = %d (2 giá trị hợp lệ + %d lần giá trị %d không thuộc bảng)"
       % (kq["f_len"], kq["outside_count"], kq["bad"]))
 print("hệ số cực điểm khác 0 (vế trái - vế phải):", kq["poles"])
 print("LogUp đúng tại %d/%d giá trị λ thử:" % (kq["lams"], kq["lams"]), kq["logup_ok"])

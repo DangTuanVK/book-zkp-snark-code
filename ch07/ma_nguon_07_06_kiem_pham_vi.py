@@ -1,7 +1,7 @@
 """Chương 7 -- Kiểm phạm vi theo cận tùy ý bằng LogUp (api cho Ch.12).
 
 (1) logup.range_check(values, B): đồng nhất thức LogUp với bảng {0..B}.
-(2) logup.vet_can(N, bounds): mọi (a, b) ∈ F_449^2 thỏa a·b = N, a ≤ Ba, b ≤ Bb.
+(2) logup.vet_can(N, bounds): mọi (a, b) in F_449^2 thỏa a·b = N, a ≤ Ba, b ≤ Bb.
 (3) logup.prove_factor: proof mini-PLONK + LogUp cho từng nghiệm tìm được.
 """
 import os, sys, random

@@ -1,0 +1,15 @@
+Prover PLONK, N = 391, n = 32, tau = 123, seed 2019 (Python, đường cong toy)
+số MSM = 9, tổng cỡ = 312, cỡ từng MSM = [34, 34, 34, 35, 33, 33, 38, 37, 34]
+số phép cộng điểm (kể cả nhân đôi) = 3432
+số NTT = 28, tổng cỡ = 896
+thời gian (cProfile): tổng 0.171 s | MSM 0.106 s (61.9%) | NTT 0.018 s (10.8%) | còn lại 0.047 s (27.3%)
+thời gian đồng hồ của lời gọi prove (có bật profile): 0.171 s
+
+Ước lượng T(n) = 9·t_MSM(n) + 28·t_NTT(n), số đo arkworks BLS12-381 (Lab R3)
+       n  luồng   MSM (ms)   NTT (ms)  tổng (ms)     MSM %
+    2^16      1       7674        635       8309     92.4%
+    2^18      1      28555       2796      31351     91.1%
+    2^20      1     103202      12599     115802     89.1%
+    2^16     96        452        186        638     70.8%
+    2^18     96       1300        410       1710     76.0%
+    2^20     96       4063       1331       5394     75.3%

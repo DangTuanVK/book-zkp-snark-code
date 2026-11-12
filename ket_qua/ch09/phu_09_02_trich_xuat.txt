@@ -1,0 +1,11 @@
+(1) Gộp U (u = 398, E != 0) với instance mới (17, 23)
+    thách thức r = [3, 10, 100]
+    W2 trích (a, b) = [17, 23] | W1 trích (a, b) = [168, 37]
+    E1 trích = [0, 52, 52, 0, 0, 0, 0, 52, 52, 0, 0, 0, 373]
+    E2 trích khác 0: 0 | T trích khớp T: True
+    witness trích được thỏa U: True | thỏa instance mới: True
+    hai transcript: họ nghiệm E có 449 phần tử (một tham số tự do k in F_449)
+(2) Instance sai (17, 24): phần dư khác 0 ở hàng [12] giá trị [17]
+    số v_12 theo số thách thức r đạt: {1: 1, 2: 448}
+    v_12 = T_12 = 17 -> r đạt: [0] | v_12 = 0 -> r đạt: [0, 448]
+(3) Mài Fiat-Shamir qua 449 giá trị v_12: trúng 1 lần [(199, 222)]

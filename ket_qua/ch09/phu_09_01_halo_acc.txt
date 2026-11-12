@@ -1,0 +1,9 @@
+n = 8, k = 3 vòng IPA
+proof 1: u = [3, 92, 250]  s = hệ số g_1 = [286, 310, 145, 333, 329, 96, 407, 303]
+proof 2: u = [17, 58, 405]  s = hệ số g_2 = [271, 224, 174, 114, 193, 80, 447, 169]
+G_1 = <s_1, G> = (4330, 2599)  G_2 = (71, 2613)
+b_f = g(z): proof 1 g_1(5) = 326, proof 2 g_2(11) = 46 (tích 3 thừa số thay vì 8 số hạng)
+gộp: alpha = 421, x = 108, C = G_1 + alpha G_2 = (1939, 4708), v = g_1(x) + alpha g_2(x) = 69
+mở IPA cho C tại x: hợp lệ = True | Verifier: {'smul': 18, 'add': 15, 'fmul': 14}
+so sánh: kiểm riêng hai bộ tích lũy = 2 MSM cỡ 8 (16 nhân vô hướng); gộp = 1 lần mở
+G_2 sai: lọt 0/20 lần gộp (trên trường 449 xác suất lọt mỗi lần cỡ 1/449)

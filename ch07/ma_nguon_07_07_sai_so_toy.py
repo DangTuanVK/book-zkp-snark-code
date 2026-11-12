@@ -2,7 +2,7 @@
 
 Prover gian chứng minh (28, 30) với bảng {0..19}, {0..23} (bỏ phần dư của t).
 Đo tỉ lệ proof gian được chấp nhận qua 200 nhãn transcript và tách phần do
-ζ ∈ H (Z_H(ζ) = 0, mọi ràng buộc tại ζ 'tự thỏa'; xác suất 32/449 ≈ 7,1%).
+ζ in H (Z_H(ζ) = 0, mọi ràng buộc tại ζ 'tự thỏa'; xác suất 32/449 ≈ 7,1%).
 Ở trường 256 bit phần này là n/|F|, không đáng kể.
 """
 import os, sys, random
@@ -23,7 +23,7 @@ for i in range(T):
     if logup.verify(vk, x, pf, label=lab):
         lot, lot_H = lot + 1, lot_H + inH
 print("proof gian được chấp nhận: %d/%d = %.1f%%" % (lot, T, 100 * lot / T))
-print("  trong đó ζ ∈ H: %d; ζ ∉ H: %d" % (lot_H, lot - lot_H))
-print("số lần ζ ∈ H (mọi proof): %d/%d = %.1f%%; lý thuyết 32/449 = %.1f%%"
+print("  trong đó ζ in H: %d; ζ not in H: %d" % (lot_H, lot - lot_H))
+print("số lần ζ in H (mọi proof): %d/%d = %.1f%%; lý thuyết 32/449 = %.1f%%"
       % (zeta_H, T, 100 * zeta_H / T, 100 * 32 / 449))
 assert lot_H <= zeta_H and lot < T // 4

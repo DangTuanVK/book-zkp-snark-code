@@ -2,7 +2,7 @@ f = [17, 23]  bội khác 0: {17: 1, 23: 1}  ngoài bảng: []
 Π(X + f_i)        = 391 + 40·X + 1·X^2
 Π(X + t_j)^{m_j}  = 391 + 40·X + 1·X^2  -> bằng nhau: True
 γ = 165: hai vế = 92, 92
-f' = [17, 40]: ngoài bảng [40]; số γ ∈ F_449 làm hai tích bằng nhau: 1/449 (cận deg/p = 2/449)
+f' = [17, 40]: ngoài bảng [40]; số γ in F_449 làm hai tích bằng nhau: 1/449 (cận deg/p = 2/449)
 f = (17, 23), g = (23, 17): Z = [1, 321, 1] -> Z_n = 1: True
 f' = (17, 40), g = (17, 23): Z = [1, 1, 142] -> Z_n = 1: False
 bậc Π(X + t_j)^{m_j} = Σ m_j = 2

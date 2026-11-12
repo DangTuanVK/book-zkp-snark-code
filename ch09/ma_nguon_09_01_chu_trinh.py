@@ -29,7 +29,7 @@ print("Điểm", G1, "trên E1 có cấp", fo.point_order(G1, 0, c["q1"], c["q2"
 # (2) Đường cong của sách: #E = 5388 = 12·449; cần đường trên F_449 có đúng 5387 điểm
 q, r = 5387, 449
 lo, hi = math.ceil(r + 1 - 2 * r ** 0.5), math.floor(r + 1 + 2 * r ** 0.5)
-print("Hasse: #E'(F_449) ∈ [%d, %d] (|#E' - 450| ≤ 2√449 ≈ 42,4) -> không thể bằng %d" % (lo, hi, q))
+print("Hasse: #E'(F_449) in [%d, %d] (|#E' - 450| ≤ 2√449 ≈ 42,4) -> không thể bằng %d" % (lo, hi, q))
 print("Chu trình cần q ≈ r; ở đây q/r ≈ %d, và #E = 12·449 không nguyên tố" % round(q / r))
 assert not (lo <= q <= hi)
 
