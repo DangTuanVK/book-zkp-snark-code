@@ -1,0 +1,13 @@
+R1CS: m = 13, n = 14 -> đệm 16 x 16 (s = 4); nnz(A, B, C) = [21, 13, 13]
+z = [1, 391, 17, 23, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0]
+W (bảng được cam kết) = [0, 0, 17, 23, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0]
+τ = [74, 213, 323, 402] ; r_x = [310, 401, 336, 283] ; r_y = [56, 378, 46, 304]
+Sum-check #1: s_j(0..3) = [[0, 0, 219, 3], [69, 340, 215, 157], [326, 61, 375, 325], [358, 444, 14, 182]]
+v_A, v_B, v_C = (249, 410, 343) ; e_x = 76
+r_A, r_B, r_C = (239, 49, 230) ; Sum-check #2: s_j(0..2) = [[239, 204, 404], [98, 432, 184], [62, 64, 431], [17, 303, 262]]
+W~(r_y) = 14 ; z~(r_y) = v_Z = 36 ; A~,B~,C~(r_x,r_y) = (135, 46, 193) ; e_y = 350
+Verifier chấp nhận: True
+Số vòng sum-check: 8; số cột Ligero mở: 8 (ma trận Ligero 4 x 4)
+Proof: sum-check 16 + 12, (v_A,v_B,v_C) 3, W~(r_y) 1, Ligero 40 phần tử trường + 32 băm; gốc 1 băm
+Tổng: 72 phần tử trường + 33 giá trị băm 32 byte (3360 byte nếu phần tử 32 byte)
+Nghiệm giả (28, 30) được chấp nhận: True ; witness sai (17, 24) lọt: 0 / 4

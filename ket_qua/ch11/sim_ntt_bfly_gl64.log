@@ -1,0 +1,12 @@
+Command: <KHO_MA>/rtl/tb/out/ntt_bfly_gl64/./simv -l sim.log
+Chronologic VCS simulator copyright 1991-2023
+Contains Synopsys proprietary information.
+Compiler version U-2023.03-SP2-2-T-20240104_Full64; Runtime version U-2023.03-SP2-2-T-20240104_Full64;  Nov 12 14:46 2026
+ntt_bfly_gl64: W = 64, da kiem 20320 vector, so loi = 0, so chu ky = 23035, do tre = 3 chu ky
+KET QUA: DAT
+$finish called from file "<KHO_MA>/rtl/tb/tb_rtl.sv", line 84.
+$finish at simulation time            230375000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 230375000 ps
+CPU Time:      0.180 seconds;       Data structure size:   0.0Mb
+Thu Nov 12 14:46:33 2026

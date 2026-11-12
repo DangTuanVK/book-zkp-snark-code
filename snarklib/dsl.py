@@ -184,6 +184,36 @@ class Circuit:
         self.enforce(total, self.const(1), x, "recompose")
         return bits
 
+    def assert_le(self, x, bound, k=None, prefix=None, label="le"):
+        """x <= bound (bound là hằng số nguyên >= 0), thêm ở Chương 12.
+
+        Cách làm: phân tích d = bound - x thành k bit (k = số bit của bound),
+        tức k ràng buộc bit + 1 ràng buộc tổ hợp. Ràng buộc chỉ bảo đảm
+        d ∈ [0, 2^k - 1], nghĩa là x ∈ {bound - d mod p}; muốn có đúng
+        0 <= x <= bound thì x phải ĐÃ được chặn x ∈ [0, 2^kx - 1] (ví dụ bằng
+        to_bits) và 2^kx + 2^k <= p + 1 để hai khoảng không quấn quanh p.
+        Trả về danh sách k bit của d.
+        """
+        bound = int(bound)
+        if bound < 0:
+            raise ValueError("bound phải >= 0")
+        k = k or max(1, bound.bit_length())
+        if (1 << k) - 1 < bound:
+            raise ValueError("k bit không chứa được bound")
+        prefix = prefix or "le%d_" % len(self.names)
+        d = self.const(bound) - x
+        bits = []
+        for i in range(k):
+            b = self._new_var("%s%d" % (prefix, i), "aux",
+                              hint=lambda env, i=i: self.F((int(self.eval(d, env)) >> i) & 1))
+            self.assert_bool(b, "bool")
+            bits.append(b)
+        total = self.const(0)
+        for i, b in enumerate(bits):
+            total = total + b * (1 << i)
+        self.enforce(total, self.const(1), d, label)
+        return bits
+
     # ------------------------------------------------------------ witness
     def eval(self, lc, env):
         F = self.F
@@ -383,5 +413,23 @@ def mach_phan_tich(N=None, k=5, nonzero=False):
     if nonzero:
         c.assert_nonzero(a - 1, name="u_a")
         c.assert_nonzero(b - 1, name="u_b")
+    c.assert_mul(a, b, vN)
+    return c, (vN, a, b)
+
+
+def mach_phan_tich_sua(N=None, k=5, bounds=(19, 23)):
+    """Mạch đã sửa của Chương 12: mach_phan_tich + a <= bounds[0], b <= bounds[1].
+
+    Với cận (19, 23): a·b <= 437 < 449 nên a·b ≡ N (mod 449) kéo theo a·b = N
+    trên Z; nghiệm duy nhất của N = 391 là (17, 23). Trả về (circuit, (N, a, b)).
+    """
+    c = Circuit()
+    vN = c.public("N")
+    a = c.private("a")
+    b = c.private("b")
+    c.to_bits(a, k, prefix="a")
+    c.to_bits(b, k, prefix="b")
+    c.assert_le(a, bounds[0], prefix="da")
+    c.assert_le(b, bounds[1], prefix="db")
     c.assert_mul(a, b, vN)
     return c, (vN, a, b)

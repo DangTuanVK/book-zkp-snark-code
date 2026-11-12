@@ -1,0 +1,77 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : montmul_w32
+Version: V-2023.12-SP3
+Date   : Thu Nov 12 14:27:08 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: lsi_10k
+Wire Load Model Mode: top
+
+  Startpoint: u_mm/a_q_reg[13]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_mm/y_reg[29]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  u_mm/a_q_reg[13]/CP (FD1P)               0.00       0.00 r
+  u_mm/a_q_reg[13]/Q (FD1P)                1.58       1.58 f
+  u_mm/U798/Z2 (B2IP)                      1.21       2.79 f
+  u_mm/U1086/Z (ENP)                       1.17       3.96 f
+  u_mm/U1588/Z (IVP)                       0.43       4.38 r
+  u_mm/U150/Z (EON1)                       1.34       5.73 r
+  u_mm/U1596/S (FA1AP)                     2.18       7.91 r
+  u_mm/U1606/S (FA1AP)                     2.11      10.02 r
+  u_mm/U1637/S (FA1AP)                     2.11      12.13 r
+  u_mm/U1672/S (FA1AP)                     2.11      14.25 r
+  u_mm/U1678/S (FA1AP)                     2.16      16.40 f
+  u_mm/U350/Z (IVDA)                       0.83      17.23 f
+  u_mm/U1674/Z (AN2P)                      0.87      18.10 f
+  u_mm/U1677/Z (AO7)                       1.04      19.15 r
+  u_mm/U1736/S (FA1AP)                     1.30      20.44 r
+  u_mm/U368/Z (EOP)                        1.13      21.58 f
+  u_mm/U1743/Z (EOP)                       1.13      22.71 f
+  u_mm/U614/Z (MUX21LP)                    0.69      23.40 r
+  u_mm/U167/Z (EN)                         1.39      24.79 f
+  u_mm/U525/Z (ND2P)                       0.75      25.54 r
+  u_mm/U524/Z (MUX21L)                     1.22      26.75 r
+  u_mm/U637/Z (MUX21L)                     0.83      27.58 r
+  u_mm/U636/Z (EN)                         1.19      28.77 f
+  u_mm/U633/Z (MUX21L)                     0.49      29.26 r
+  u_mm/U629/Z (EN)                         1.26      30.52 f
+  u_mm/U1978/S (HA1)                       1.14      31.66 f
+  u_mm/U514/Z (NR2P)                       0.82      32.47 r
+  u_mm/U1979/Z (MUX21L)                    0.89      33.36 r
+  u_mm/U1980/Z (MUX21L)                    0.83      34.19 r
+  u_mm/U1986/Z (AN2P)                      0.68      34.87 r
+  u_mm/U3009/Z (MUX21L)                    0.58      35.45 f
+  u_mm/U3061/Y (IVDAP)                     0.54      35.99 r
+  u_mm/U604/Z (MUX21L)                     0.96      36.94 r
+  u_mm/U659/Z (MUX21LP)                    1.03      37.97 r
+  u_mm/U657/Z (MUX21L)                     0.83      38.79 r
+  u_mm/U3052/Z (EOP)                       1.09      39.88 f
+  u_mm/y_reg[29]/D (FD1)                   0.00      39.88 f
+  data arrival time                                  39.88
+
+  clock clk (rise edge)                   40.69      40.69
+  clock network delay (ideal)              0.00      40.69
+  u_mm/y_reg[29]/CP (FD1)                  0.00      40.69 r
+  library setup time                      -0.80      39.89
+  data required time                                 39.89
+  -----------------------------------------------------------
+  data required time                                 39.89
+  data arrival time                                 -39.88
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+1

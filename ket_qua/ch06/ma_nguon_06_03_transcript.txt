@@ -1,0 +1,40 @@
+n = 32, ω = 221, SRS: 38 điểm G1 ([τ^0..τ^37]_1) + 2 điểm G2
+Prover dừng-làm-lại vì mẫu số z bằng 0: 0 lần
+--- Vòng 1
+  [a]_1            (3610, 2319)
+  [b]_1            (225, 4423)
+  [c]_1            (2481, 2194)
+--- Vòng 2
+  beta             216
+  gamma            28
+  [z]_1            (769, 1551)
+--- Vòng 3
+  alpha            330
+  [t_lo]_1         (2602, 2868)
+  [t_mid]_1        (2484, 718)
+  [t_hi]_1         (2054, 2648)
+--- Vòng 4
+  zeta             343
+  a_bar            345
+  b_bar            115
+  c_bar            26
+  s1_bar           298
+  s2_bar           311
+  z_omega_bar      323
+--- Vòng 5
+  v                318
+  [W_zeta]_1       (2756, 146)
+  [W_zeta_omega]_1 (4809, 3276)
+  u                286
+z(ω^i), i = 0..31:
+  [1, 151, 49, 238, 156, 333, 425, 406, 163, 440, 136, 197, 93, 433, 197, 55, 326, 440, 355, 167, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+z(ω^20..31) = [1] (mọi vòng σ nằm trong hàng 0..19 nên tích đã quay về 1 tại hàng 20)
+bậc a, b, c, z, t_lo, t_mid, t_hi: 33 33 33 34 32 32 37
+verify(N = 391): True
+kích thước proof: 9 phần tử G1 + 6 phần tử F_r
+  nếu nén điểm trên BN254: 9·32 + 6·32 = 480 byte
+  nếu nén điểm trên BLS12-381: 9·48 + 6·32 = 624 byte
+Prover (một lần chạy thành công + 0 lần làm lại):
+  MSM: 9 lần, cỡ [34, 34, 34, 35, 33, 33, 38, 37, 34], tổng cỡ 312
+  NTT cỡ 32: 28 lần; pairing: 0
+Verifier: MSM cỡ [18, 2], vô hướng khác 0/1 = 18, pairing = 2, lũy thừa cuối = 1

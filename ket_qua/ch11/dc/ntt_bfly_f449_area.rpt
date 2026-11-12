@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : ntt_bfly_f449
+Version: V-2023.12-SP3
+Date   : Thu Nov 12 14:29:15 2026
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    lsi_10k (File: <SYNOPSYS>/syn/V-2023.12-SP3/libraries/syn/lsi_10k.db)
+
+Number of ports:                          220
+Number of nets:                          2063
+Number of cells:                         1611
+Number of combinational cells:           1494
+Number of sequential cells:               115
+Number of macros/black boxes:               0
+Number of buf/inv:                        182
+Number of references:                       1
+
+Combinational area:               4879.000000
+Buf/Inv area:                      251.000000
+Noncombinational area:             817.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                  5696.000000
+Total area:                 undefined
+1

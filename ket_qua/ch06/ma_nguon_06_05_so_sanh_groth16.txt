@@ -1,0 +1,13 @@
+                                   Groth16                    PLONK
+số hàng / miền                     R1CS 13 (+2) -> n = 16     Plonkish 20 -> n = 32
+setup                              riêng cho mạch             SRS phổ quát bậc 37
+proof                              2 G1 + 1 G2                9 G1 + 6 F_r
+byte (nén, BLS12-381)              2·48 + 96 = 192            9·48 + 6·32 = 624
+byte (nén, BN254)                  2·32 + 64 = 128            9·32 + 6·32 = 480
+Prover: số MSM (cỡ)                5 [16, 16, 16, 12, 15]     9 [34, 34, 34, 35, 33, 33, 38, 37, 34]
+Prover: tổng cỡ MSM                75                         312
+Prover: nhân vô hướng (mọi loại)   77                         310 (trong MSM)
+Prover: NTT cỡ n                   (INTT trong QAP)           28
+Verifier: pairing                  3 (+ e(α,β) tính sẵn)      2
+Verifier: MSM (cỡ)                 [2]                        [18, 2]
+Verifier: nhân vô hướng            2                          18

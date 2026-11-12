@@ -1,0 +1,9 @@
+{'ban_sao': 1, 'r1cs_m': 13, 'r1cs_dem': 16, 'spartan_iop': 506, 'spartan_sumcheck': 255, 'plonkish_hang': 20, 'n_plonk': 32, 'plonk_fft': 11008, 'plonk_54nlogn': 8640, 'hyperplonk_piop': 4914, 'hyperplonk_inv': 32}
+{'ban_sao': 2, 'r1cs_m': 26, 'r1cs_dem': 32, 'spartan_iop': 1032, 'spartan_sumcheck': 527, 'plonkish_hang': 40, 'n_plonk': 64, 'plonk_fft': 25472, 'plonk_54nlogn': 20736, 'hyperplonk_piop': 9970, 'hyperplonk_inv': 64}
+{'ban_sao': 4, 'r1cs_m': 52, 'r1cs_dem': 64, 'spartan_iop': 2084, 'spartan_sumcheck': 1071, 'plonkish_hang': 80, 'n_plonk': 128, 'plonk_fft': 57856, 'plonk_54nlogn': 48384, 'hyperplonk_piop': 20082, 'hyperplonk_inv': 128}
+{'ban_sao': 8, 'r1cs_m': 104, 'r1cs_dem': 128, 'spartan_iop': 4188, 'spartan_sumcheck': 2159, 'plonkish_hang': 160, 'n_plonk': 256, 'plonk_fft': 129536, 'plonk_54nlogn': 110592, 'hyperplonk_piop': 40306, 'hyperplonk_inv': 256}
+{'ban_sao': 16, 'r1cs_m': 208, 'r1cs_dem': 256, 'spartan_iop': 8396, 'spartan_sumcheck': 4335, 'plonkish_hang': 320, 'n_plonk': 512, 'plonk_fft': 286720, 'plonk_54nlogn': 248832, 'hyperplonk_piop': 80754, 'hyperplonk_inv': 512}
+{'ban_sao': 32, 'r1cs_m': 416, 'r1cs_dem': 512, 'spartan_iop': 16812, 'spartan_sumcheck': 8687, 'plonkish_hang': 640, 'n_plonk': 1024, 'plonk_fft': 628736, 'plonk_54nlogn': 552960, 'hyperplonk_piop': 161650, 'hyperplonk_inv': 1024}
+{'ban_sao': 64, 'r1cs_m': 832, 'r1cs_dem': 1024, 'spartan_iop': 33644, 'spartan_sumcheck': 17391, 'plonkish_hang': 1280, 'n_plonk': 2048, 'plonk_fft': 1368064, 'plonk_54nlogn': 1216512, 'hyperplonk_piop': 323442, 'hyperplonk_inv': 2048}
+Tỉ số FFT PLONK / IOP Spartan: ['21.8', '24.7', '27.8', '30.9', '34.1', '37.4', '40.7']
+Tỉ số FFT PLONK / PIOP HyperPlonk: ['2.2', '2.6', '2.9', '3.2', '3.6', '3.9', '4.2']

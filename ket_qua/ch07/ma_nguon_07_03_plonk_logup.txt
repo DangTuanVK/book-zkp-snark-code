@@ -1,0 +1,11 @@
+bounds = (31, 31): n = 32, K = 1 lookup, bảng [32]
+  (17, 23): verify = True; proof 11 G1 + 11 F; λ = 353, ζ = 133; dừng lại 1 lần
+  bội m khác 0: [{17: 1, 23: 1}]
+bounds = (19, 23): n = 32, K = 2 lookup, bảng [20, 24]
+  (17, 23): verify = True; proof 13 G1 + 16 F; λ = 161, ζ = 78; dừng lại 0 lần
+  bội m khác 0: [{17: 1}, {23: 1}]
+(28, 30) với bảng {0..31}: verify = True (28·30 = 840 ≡ 391)
+(28, 30) với bảng (19, 23): Prover trung thực dừng -- giá trị ngoài bảng a: [28]
+  thử âm (28, 30), bảng (19, 23), Prover gian  : lọt 1/12 (ζ ∈ H: 1)
+  thử âm (40, 21), bảng {0..31}, Prover gian   : lọt 2/12 (ζ ∈ H: 2)
+  thử âm (17, 23), sửa m̄ + 1                  : lọt 0/12 (ζ ∈ H: 0)

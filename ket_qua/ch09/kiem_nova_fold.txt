@@ -1,0 +1,6 @@
+Bước 1: r = 397  u = 398  x = [264]  thỏa: True
+  T = [0, 448, 448, 0, 0, 0, 0, 448, 448, 0, 0, 0, 36]
+  E = [0, 52, 52, 0, 0, 0, 0, 52, 52, 0, 0, 0, 373] (5 phần tử khác 0)
+Bước 2 (relaxed + mới): r = 20  u = 418  thỏa: True
+Kích thước: T có m = 13 phần tử (bản thật: 1 cam kết); instance (E, u, x): 13 + 1 + 1
+Gộp với (17, 24): thỏa 0/20 | gộp với nghiệm giả (28, 30): thỏa 20/20

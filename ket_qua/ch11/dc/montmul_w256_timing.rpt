@@ -1,0 +1,140 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : montmul_w256
+Version: V-2023.12-SP3
+Date   : Thu Nov 12 15:32:18 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: lsi_10k
+Wire Load Model Mode: top
+
+  Startpoint: u_mm/b_q_reg[33]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_mm/y_reg[203]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  u_mm/b_q_reg[33]/CP (FD1)                0.00       0.00 r
+  u_mm/b_q_reg[33]/QN (FD1)                2.09       2.09 f
+  u_mm/U33457/Z (B4I)                      2.76       4.86 r
+  u_mm/U33458/Z (EO)                       1.13       5.98 f
+  u_mm/U33459/Z (ND2)                      0.91       6.89 r
+  u_mm/U887/Z (IVDA)                       0.91       7.81 r
+  u_mm/U33527/Z (IVP)                      0.42       8.23 f
+  u_mm/U2049/Z (IVP)                       4.02      12.25 r
+  u_mm/U39637/Z (AO4)                      0.53      12.78 f
+  u_mm/U39708/S (FA1A)                     2.28      15.06 r
+  u_mm/U39818/CO (FA1A)                    0.94      16.00 r
+  u_mm/U26281/S (FA1A)                     2.28      18.28 r
+  u_mm/U25096/CO (FA1A)                    1.08      19.36 r
+  u_mm/U39842/Z (EN)                       1.19      20.55 f
+  u_mm/U39843/Z (EN)                       1.19      21.74 f
+  u_mm/U22003/S (FA1A)                     2.28      24.03 r
+  u_mm/U39938/S (FA1A)                     1.04      25.06 r
+  u_mm/U40031/CO (FA1A)                    2.04      27.10 r
+  u_mm/U40121/S (FA1AP)                    2.11      29.21 f
+  u_mm/U40122/Z (ND2)                      1.12      30.33 r
+  u_mm/U20162/Z (IVA)                      0.37      30.70 f
+  u_mm/U40123/Z (MUX21L)                   1.02      31.72 r
+  u_mm/U40124/Z (MUX21L)                   0.99      32.71 r
+  u_mm/U40125/Z (MUX21L)                   1.02      33.73 r
+  u_mm/U40126/Z (MUX21L)                   0.89      34.62 r
+  u_mm/U554/Z (MUX21L)                     0.63      35.25 f
+  u_mm/U18754/Z (IVAP)                     0.56      35.81 r
+  u_mm/U18610/Z (MUX21L)                   0.96      36.77 r
+  u_mm/U55478/Z (MUX21L)                   0.83      37.59 r
+  u_mm/U55480/Z (EN)                       3.56      41.15 r
+  u_mm/U55481/Z (IVP)                      0.79      41.94 f
+  u_mm/U4005/S (FA1A)                      1.33      43.27 r
+  u_mm/U56190/Z (AN2P)                     0.83      44.10 r
+  u_mm/U56196/Z (MUX21L)                   0.79      44.88 f
+  u_mm/U56197/Z (MUX21L)                   1.02      45.90 r
+  u_mm/U56229/Z (MUX21L)                   0.66      46.56 f
+  u_mm/U56230/Z (MUX21L)                   0.89      47.45 r
+  u_mm/U56543/Z (MUX21L)                   0.79      48.24 f
+  u_mm/U1829/Z (B4I)                       0.92      49.16 r
+  u_mm/U56666/Z (MUX21L)                   4.18      53.34 f
+  u_mm/U69862/Z (IVP)                      2.38      55.72 r
+  u_mm/U14586/S (FA1A)                     2.28      58.01 r
+  u_mm/U14383/S (FA1A)                     1.18      59.19 r
+  u_mm/U79292/S (FA1AP)                    2.11      61.30 f
+  u_mm/U79298/Z (OR2P)                     1.04      62.35 f
+  u_mm/U79299/Z (MUX21L)                   0.96      63.30 r
+  u_mm/U79300/Z (MUX21L)                   1.12      64.42 r
+  u_mm/U79301/Z (MUX21L)                   1.15      65.57 r
+  u_mm/U79302/Z (MUX21L)                   0.89      66.46 r
+  u_mm/U3035/Z (MUX21L)                    0.66      67.12 f
+  u_mm/U1764/Z (MUX21L)                    1.12      68.24 r
+  u_mm/U1759/Z (MUX21L)                    1.12      69.36 r
+  u_mm/U2755/Z (MUX21L)                    1.12      70.48 r
+  u_mm/U80053/Z (MUX21L)                   1.12      71.60 r
+  u_mm/U2621/Z (MUX21L)                    1.12      72.72 r
+  u_mm/U80054/Z (MUX21LP)                  1.04      73.76 r
+  u_mm/U80055/Z (MUX21L)                   1.12      74.88 r
+  u_mm/U80056/Z (MUX21L)                   1.12      76.00 r
+  u_mm/U80057/Z (MUX21L)                   1.12      77.12 r
+  u_mm/U80058/Z (MUX21L)                   1.12      78.24 r
+  u_mm/U80059/Z (MUX21L)                   1.12      79.35 r
+  u_mm/U2251/Z (MUX21LP)                   1.06      80.41 r
+  u_mm/U2240/Z (MUX21LP)                   1.06      81.47 r
+  u_mm/U2231/Z (MUX21L)                    1.15      82.62 r
+  u_mm/U80060/Z (MUX21L)                   0.96      83.58 r
+  u_mm/U97132/Z (MUX21L)                   1.15      84.73 r
+  u_mm/U101699/Z (MUX21LP)                 1.09      85.82 r
+  u_mm/U101700/Z (IVAP)                    0.59      86.41 f
+  u_mm/U106050/Z (MUX21L)                  0.73      87.14 f
+  u_mm/U106051/Z (IVP)                     0.88      88.02 r
+  u_mm/U106052/Z (MUX21L)                  0.96      88.98 r
+  u_mm/U106053/Z (MUX21L)                  0.67      89.65 f
+  u_mm/U106199/CO (FA1A)                   1.17      90.83 f
+  u_mm/U853/CO (FA1A)                      1.17      92.00 f
+  u_mm/U2143/CO (FA1A)                     1.24      93.24 f
+  u_mm/U106876/Z (OR2P)                    1.08      94.32 f
+  u_mm/U134189/CO (FA1A)                   1.17      95.49 f
+  u_mm/U6784/CO (FA1A)                     1.17      96.67 f
+  u_mm/U134196/CO (FA1A)                   1.17      97.84 f
+  u_mm/U6730/CO (FA1A)                     1.17      99.02 f
+  u_mm/U134200/CO (FA1A)                   1.17     100.19 f
+  u_mm/U6689/CO (FA1A)                     1.17     101.36 f
+  u_mm/U134204/CO (FA1A)                   1.17     102.54 f
+  u_mm/U6672/CO (FA1A)                     1.17     103.71 f
+  u_mm/U134182/CO (FA1A)                   1.17     104.89 f
+  u_mm/U6663/CO (FA1A)                     1.17     106.06 f
+  u_mm/U134186/CO (FA1A)                   1.17     107.23 f
+  u_mm/U6661/CO (FA1A)                     1.17     108.41 f
+  u_mm/U134177/Z (NR2)                     1.46     109.86 r
+  u_mm/U134261/Z (AO7)                     0.53     110.40 f
+  u_mm/U134265/Z (AO6)                     1.08     111.48 r
+  u_mm/U134266/Z (AO7)                     0.45     111.93 f
+  u_mm/U134267/Z (AO6)                     1.08     113.01 r
+  u_mm/U134268/Z (AO7)                     0.45     113.46 f
+  u_mm/U6265/Z (AO6)                       1.60     115.07 r
+  u_mm/U6248/Z (AO7)                       0.62     115.69 f
+  u_mm/U3/Z2 (B2I)                         1.31     116.99 f
+  u_mm/U135102/Z (AO6)                     1.08     118.07 r
+  u_mm/U135104/Z (EO)                      1.13     119.20 f
+  u_mm/y_reg[203]/D (FD1)                  0.00     119.20 f
+  data arrival time                                 119.20
+
+  clock clk (rise edge)                  120.00     120.00
+  clock network delay (ideal)              0.00     120.00
+  u_mm/y_reg[203]/CP (FD1)                 0.00     120.00 r
+  library setup time                      -0.80     119.20
+  data required time                                119.20
+  -----------------------------------------------------------
+  data required time                                119.20
+  data arrival time                                -119.20
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

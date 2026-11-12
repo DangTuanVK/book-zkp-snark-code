@@ -1,0 +1,15 @@
+montmul_w16: W = 16, da kiem 201601 vector, so loi = 0, so chu ky = 230339, do tre = 2 chu ky
+KET QUA: DAT
+montmul_w32: W = 32, da kiem 20064 vector, so loi = 0, so chu ky = 22726, do tre = 2 chu ky
+KET QUA: DAT
+montmul_w64: W = 64, da kiem 20064 vector, so loi = 0, so chu ky = 22726, do tre = 2 chu ky
+KET QUA: DAT
+montmul_w256: W = 256, da kiem 5064 vector, so loi = 0, so chu ky = 5723, do tre = 2 chu ky
+KET QUA: DAT
+ntt_bfly_f449: W = 16, da kiem 50320 vector, so loi = 0, so chu ky = 57224, do tre = 3 chu ky
+KET QUA: DAT
+ntt_bfly_gl64: W = 64, da kiem 20320 vector, so loi = 0, so chu ky = 23035, do tre = 3 chu ky
+KET QUA: DAT
+[dot bien: bo buoc tru cuoi]
+montmul_w16: W = 16, da kiem 201601 vector, so loi = 155, so chu ky = 230339, do tre = 2 chu ky
+KET QUA: TRUOT

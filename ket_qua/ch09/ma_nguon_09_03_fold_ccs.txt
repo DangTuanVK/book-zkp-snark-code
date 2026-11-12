@@ -1,0 +1,13 @@
+CCS: m = 13 -> 16 hàng, n = 14 -> 16 cột, s = 4, t = 3, bậc d = 2
+LCCCS_1: u = 1  x = [391]  r = [196, 266, 185, 345]  v = [269, 383, 232]
+  vòng 1: s_1(0..3) = [4, 33, 203, 0]
+  vòng 2: s_2(0..3) = [169, 442, 90, 231]
+  vòng 3: s_3(0..3) = [163, 171, 323, 68]
+  vòng 4: s_4(0..3) = [10, 287, 226, 109]
+sigma = [213, 173, 119]  theta = [3, 237, 117]
+LCCCS mới: u = 222  x = [145]  r' = [127, 140, 192, 90]  v' = [427, 17, 383]
+w' (a, b) = [161, 188] = w1 + rho·w2
+Verifier chấp nhận: True | LCCCS khớp Prover: True
+Kích thước proof gộp: 16 (sum-check) + 6 (sigma, theta) = 22 phần tử F_449; bỏ s_j(1): 18
+Bước 2: u = 397  thỏa: True
+Witness (17, 24): đạt 0/20 transcript | nghiệm giả (28, 30): đạt 20/20

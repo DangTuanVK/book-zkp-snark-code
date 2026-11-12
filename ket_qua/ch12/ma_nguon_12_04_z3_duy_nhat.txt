@@ -1,0 +1,5 @@
+z3 5.4.1
+mạch cũ    : sat sau 0.6 s -> witness thứ hai (a, b) = (30, 28)
+             liệt kê bằng mệnh đề chặn: 4 witness [(17, 23), (23, 17), (28, 30), (30, 28)] (4.2 s)
+mạch đã sửa: unsat sau 2.3 s -> witness của N = 391 là DUY NHẤT
+             liệt kê bằng mệnh đề chặn: 1 witness [(17, 23)] (4.8 s)

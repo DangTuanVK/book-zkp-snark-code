@@ -1,0 +1,16 @@
+Bảng 1 -- theo số bước (F = kiểm phân tích, 14 ràng buộc; mạch chính 9833, mạch phụ 10349)
+số bước | setup PP (ms) | bước TB / TV (ms) | tổng IVC (s) | verify RS (ms) | nén (ms) | verify nén (ms) | proof nén (byte)
+     10 | 1110,0 | 40,7 / 41,9 | 0,4 | 34,9 | 892,4 | 30,4 | 10624
+    100 | 1118,0 | 39,5 / 38,6 | 3,9 | 33,8 | 867,3 | 31,8 | 10624
+   1000 | 1100,6 | 39,5 / 38,9 | 39,5 | 31,2 | 874,5 | 32,1 | 10624
+
+Bảng 2 -- theo cỡ mạch bước (10 bước): ràng buộc thêm -> thời gian mỗi bước
+thêm | rb mạch chính | bước TV (ms) | nén (ms) | proof nén (byte) | RecursiveSNARK (byte)
+     0 |   9833 | 41,9 | 892,4 | 10624 | 1622296
+  1024 |  10857 | 40,8 | 864,9 | 10624 | 1687832
+  4096 |  13929 | 40,8 | 865,2 | 10624 | 1884440
+ 16384 |  26217 | 56,1 | 1210,4 | 10936 | 2670872
+ 65536 |  75369 | 106,7 | 3281,8 | 11560 | 5816600
+
+Kích thước proof nén không đổi theo số bước: 10624 byte
+Tải máy (loadavg) trước/sau: 20.62 18.72 15.15 -> 24.50 20.26 15.93

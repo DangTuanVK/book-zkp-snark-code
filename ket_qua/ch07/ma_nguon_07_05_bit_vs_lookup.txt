@@ -1,0 +1,20 @@
+                          phân tích 5 bit         LogUp {0..31}           LogUp {0..19},{0..23}   
+ràng buộc R1CS            13                      -                       -                       
+hàng Plonkish             20                      3 + bảng 32             3 + bảng 20+24          
+miền n                    32                      32                      32                      
+cam kết tiền xử lý        8                       10                      12                      
+proof                     9 G1 + 6 F              11 G1 + 11 F            13 G1 + 16 F            
+Prover: số MSM / tổng cỡ  9 / 312                 11 / 381                13 / 450                
+Prover: nhân vô hướng     310                     378                     435                     
+Prover: NTT cỡ n          28                      38                      48                      
+Verifier: MSM (cỡ)        [18, 2]                 [22, 2]                 [26, 2]                 
+Verifier: nhân vô hướng   18                      21                      25                      
+Verifier: pairing         2                       2                       2                       
+
+M giá trị | bit: R1CS  hàng  n  | lookup: hàng  bảng  n   (* : n > 64, không có trên F_449)
+        1 |         6     9  16 |            1    32  32
+        2 |        12    18  32 |            2    32  32
+        4 |        24    36  64 |            4    32  32
+        8 |        48    72 128*|            8    32  32
+       16 |        96   144 256*|           16    32  32
+       32 |       192   288 512*|           32    32  32

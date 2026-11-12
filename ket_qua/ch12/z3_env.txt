@@ -1,0 +1,17 @@
+Môi trường z3 cho Chương 12 (tạo ngày 2026-11-12, đợt 2b, task C12.0)
+
+Lệnh đã dùng:
+  export MAMBA_ROOT_PREFIX=<THU_MUC_LAM_VIEC>/.local/share/mamba
+  <THU_MUC_LAM_VIEC>/tools/micromamba/bin/micromamba create -y -n zksnark -c conda-forge python=3.11 pip
+  $MAMBA_ROOT_PREFIX/envs/zksnark/bin/pip install z3-solver
+
+Kết quả:
+  python : 3.11.18
+  z3     : 5.4.1  (gói pip z3-solver 5.4.1.0)
+  đường dẫn: $MAMBA_ROOT_PREFIX/envs/zksnark/bin/python
+
+Chạy mã cần z3:
+  $MAMBA_ROOT_PREFIX/envs/zksnark/bin/python ch12/ma_nguon_12_04_z3_duy_nhat.py
+  $MAMBA_ROOT_PREFIX/envs/zksnark/bin/python tests/test_ch12_uniqueness.py   # gồm test_z3_neu_co
+Không đụng tới env pqc hay zkpbook. Không có z3, snarklib.uniqueness vẫn chạy
+(HAVE_Z3 = False): vét cạn có lan truyền và fuzz là Python thuần.

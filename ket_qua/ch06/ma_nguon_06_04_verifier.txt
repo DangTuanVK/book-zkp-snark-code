@@ -1,0 +1,15 @@
+  bước 4  beta   = 216
+  bước 4  gamma  = 28
+  bước 4  alpha  = 330
+  bước 4  zeta   = 343
+  bước 4  v      = 318
+  bước 4  u      = 286
+  bước 5  Z_H(ζ) = ζ^32 - 1 = 24
+  bước 6  L_0(ζ) = 385
+  bước 7  PI(ζ)  = -391·L_0(ζ) = 329
+  bước 8  r_0    = 124
+  bước 11 [E]_1  = 375·[1]_1
+  bước 12 hai pairing -> True
+  thử âm sửa dây a[19] = 18  : lọt 0/4
+  thử âm đổi N = 389         : lọt 0/4
+  thử âm sửa ā + 1           : lọt 0/4

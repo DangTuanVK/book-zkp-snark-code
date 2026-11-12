@@ -1,0 +1,16 @@
+== mạch cũ: R1CS m = 13 (QAP n = 16), Plonkish 20 hàng (PLONK n = 32) ==
+  (a, b) = (17, 23)
+    Groth16: proof -> verify = True
+    PLONK  : proof -> verify = True
+  (a, b) = (28, 30)
+    Groth16: proof -> verify = True
+    PLONK  : proof -> verify = True
+== mạch đã sửa: R1CS m = 25 (QAP n = 32), Plonkish 38 hàng (PLONK n = 64) ==
+  (a, b) = (17, 23)
+    Groth16: proof -> verify = True
+    PLONK  : proof -> verify = True
+  (a, b) = (28, 30)
+    Groth16: Prover từ chối (witness không thỏa R1CS: t(X) không chia hết A·B - C)
+    PLONK  : Prover từ chối (witness không thỏa mạch: tử số không chia hết cho Z_H)
+Prover gian (28, 30), mạch đã sửa: lọt 7/40, trong đó ζ ∈ H (Z_H(ζ) = 0): 6; lý thuyết |H|/r = 64/449 ≈ 14.3%
+Nghiệm giả là lỗi của MẠCH (thiếu ràng buộc), không phải của hệ chứng minh.

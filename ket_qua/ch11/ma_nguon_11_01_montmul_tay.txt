@@ -1,0 +1,9 @@
+W = 16, R = 2^16 = 65536, p = 449
+PINV = -p^{-1} mod R = 61887 = 0xf1bf;  R mod p = 431;  R^2 mod p = 324
+a = 17R mod p = 143 (0x008f),  b = 23R mod p = 35 (0x0023)
+T = 5005,  m = 21299,  U = 9568256 = 146·2^16,  t = 146,  y = 146
+U mod R = 0 (chia hết);  y = 391·R mod p = 146;  from_mont(y) = 391
+vector RTL (a b y, hex): 008f00230092
+R = 2^9 : bước trừ cuối  43146 / 201601 cặp = 21.402%
+R = 2^16: bước trừ cuối    155 / 201601 cặp = 0.077%
+mô hình RTL vs snarklib.montgomery: 201601 cặp, 0 lỗi

@@ -1,0 +1,6 @@
+Plonkish: 20 hàng, 39 ràng buộc sao chép -> siêu lập phương µ = 5 (32 hàng)
+Zerocheck cổng: 5 vòng, bậc 4 mỗi vòng (gate bậc 3 nhân eq)
+Productcheck: ṽ có 6 biến; tích s = ṽ(1,..,1,0) = 1; zerocheck gộp 5 vòng, bậc 5
+Phần tử trường do sum-check gửi: 56; nonce chọn (β, γ): 0; Verifier chấp nhận: True
+Witness (17,24): cổng hỏng ở hàng [19] ; bản phá sao chép ở hàng 1 : cổng còn đúng = True , vi phạm sao chép = 2
+Lọt qua Verifier: witness sai 0/4, phá sao chép 0/4

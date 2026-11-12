@@ -1,0 +1,83 @@
+ 
+****************************************
+Report : qor
+Design : montmul_w256
+Version: V-2023.12-SP3
+Date   : Thu Nov 12 14:30:59 2026
+****************************************
+
+
+  Timing Path Group 'clk'
+  -----------------------------------
+  Levels of Logic:             817.00
+  Critical Path Length:        997.70
+  Critical Path Slack:           1.50
+  Critical Path Clk Period:   1000.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:         -0.40
+  Total Hold Violation:       -205.20
+  No. of Hold Violations:      513.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          1
+  Hierarchical Port Count:        772
+  Leaf Cell Count:             147163
+  Buf/Inv Cell Count:           12028
+  Buf Cell Count:                  67
+  Inv Cell Count:               12028
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:    146393
+  Sequential Cell Count:          770
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:   525681.000000
+  Noncombinational Area:  5394.000000
+  Buf/Inv Area:          12031.000000
+  Total Buffer Area:            70.00
+  Total Inverter Area:       12031.00
+  Macro/Black Box Area:      0.000000
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:            531075.000000
+  Design Area:          531075.000000
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:        188844
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: <da-an>
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                   72.12
+  Logic Optimization:                 46.81
+  Mapping Optimization:              123.90
+  -----------------------------------------
+  Overall Compile Time:              721.13
+  Overall Compile Wall Clock Time:   725.46
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.40  TNS: 205.20  Number of Violating Paths: 513
+
+  --------------------------------------------------------------------
+
+
+1

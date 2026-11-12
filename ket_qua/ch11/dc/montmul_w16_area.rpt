@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : montmul_w16
+Version: V-2023.12-SP3
+Date   : Thu Nov 12 14:21:02 2026
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    lsi_10k (File: <SYNOPSYS>/syn/V-2023.12-SP3/libraries/syn/lsi_10k.db)
+
+Number of ports:                          104
+Number of nets:                          1583
+Number of cells:                         1287
+Number of combinational cells:           1236
+Number of sequential cells:                50
+Number of macros/black boxes:               0
+Number of buf/inv:                        140
+Number of references:                       1
+
+Combinational area:               4040.000000
+Buf/Inv area:                      199.000000
+Noncombinational area:             364.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                  4404.000000
+Total area:                 undefined
+1

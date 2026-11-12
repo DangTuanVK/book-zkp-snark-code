@@ -29,9 +29,19 @@
    "mo_ta": "Trường hữu hạn F_p và trường mở rộng bậc 2 F_q[i]/(i^2 + 1)."
   },
   {
+   "module": "snarklib.folding",
+   "file": "snarklib/folding.py",
+   "mo_ta": "Chương 9 -- đệ quy, chu trình đường cong, số học không gốc và folding."
+  },
+  {
    "module": "snarklib.gf2tower",
    "file": "snarklib/gf2tower.py",
    "mo_ta": "Trường tháp nhị phân F_2 ⊂ F_4 ⊂ F_16 ⊂ F_256 theo cấu trúc Wiedemann (Binius)."
+  },
+  {
+   "module": "snarklib.gkr",
+   "file": "snarklib/gkr.py",
+   "mo_ta": "Giao thức GKR cho mạch số học phân tầng (cổng cộng/nhân, fan-in 2)."
   },
   {
    "module": "snarklib.groth16",
@@ -64,6 +74,11 @@
    "mo_ta": "PCS kiểu Ligero cho đa thức đa tuyến tính (mã Reed–Solomon + Merkle)."
   },
   {
+   "module": "snarklib.logup",
+   "file": "snarklib/logup.py",
+   "mo_ta": "LogUp: lookup bằng đạo hàm logarit (Chương 7, §7.2a và §7.3)."
+  },
+  {
    "module": "snarklib.merkle",
    "file": "snarklib/merkle.py",
    "mo_ta": "Cây Merkle nhị phân dùng SHA-256."
@@ -77,6 +92,11 @@
    "module": "snarklib.montgomery",
    "file": "snarklib/montgomery.py",
    "mo_ta": "Số học Montgomery: REDC, nhân Montgomery, chuyển vào/ra dạng Montgomery."
+  },
+  {
+   "module": "snarklib.multiset",
+   "file": "snarklib/multiset.py",
+   "mo_ta": "Kiểm đa tập bằng tích (Chương 7, §7.1): nền của mọi lookup kiểu tích."
   },
   {
    "module": "snarklib.opcount",
@@ -99,6 +119,11 @@
    "mo_ta": "MSM (multi-scalar multiplication) Σ s_i·P_i: Pippenger (phương pháp xô) và ngây thơ."
   },
   {
+   "module": "snarklib.plonk",
+   "file": "snarklib/plonk.py",
+   "mo_ta": "mini-PLONK đầy đủ (Chương 6): 5 vòng Prover và 12 bước Verifier."
+  },
+  {
    "module": "snarklib.plonkish",
    "file": "snarklib/plonkish.py",
    "mo_ta": "Số học hóa Plonkish (kiểu PLONK gốc, 3 cột a, b, c)."
@@ -119,9 +144,24 @@
    "mo_ta": "Hệ ràng buộc bậc hai R1CS: (A z) ∘ (B z) = C z, với z = (1, x, w)."
   },
   {
+   "module": "snarklib.spartan",
+   "file": "snarklib/spartan.py",
+   "mo_ta": "Mini-Spartan: zkSNARK (không ZK) cho R1CS bằng hai sum-check + PCS đa tuyến tính."
+  },
+  {
+   "module": "snarklib.sumcheck",
+   "file": "snarklib/sumcheck.py",
+   "mo_ta": "Giao thức sum-check (Lund–Fortnow–Karloff–Nisan) và hai PIOP dựng trên nó."
+  },
+  {
    "module": "snarklib.transcript",
    "file": "snarklib/transcript.py",
    "mo_ta": "Transcript Fiat–Shamir dựa trên SHA-256 có tách miền (domain separation)."
+  },
+  {
+   "module": "snarklib.uniqueness",
+   "file": "snarklib/uniqueness.py",
+   "mo_ta": "Kiểm tính duy nhất của witness cho R1CS nhỏ (Chương 12: an toàn mạch)."
   }
  ],
  "tests": [
@@ -258,6 +298,33 @@
   },
   {
    "file": "tests/test_ch10_thap.py"
+  },
+  {
+   "file": "tests/test_ch06_plonk.py"
+  },
+  {
+   "file": "tests/test_ch07_lookup.py"
+  },
+  {
+   "file": "tests/test_ch08_gkr.py"
+  },
+  {
+   "file": "tests/test_ch08_spartan.py"
+  },
+  {
+   "file": "tests/test_ch08_sumcheck.py"
+  },
+  {
+   "file": "tests/test_ch09_folding.py"
+  },
+  {
+   "file": "tests/test_ch11_rtl.py"
+  },
+  {
+   "file": "tests/test_ch12_dsl_le.py"
+  },
+  {
+   "file": "tests/test_ch12_uniqueness.py"
   }
  ],
  "ket_qua": [
@@ -291,6 +358,39 @@
    "ch05/ma_nguon_05_05_mo_phong.py",
    "ch05/vet_can_witness.py"
   ],
+  "ch06": [
+   "ch06/ma_nguon_06_01_bang_cong.py",
+   "ch06/ma_nguon_06_02_vong3.py",
+   "ch06/ma_nguon_06_03_transcript.py",
+   "ch06/ma_nguon_06_04_verifier.py",
+   "ch06/ma_nguon_06_05_so_sanh_groth16.py",
+   "ch06/ma_nguon_06_06_gia_mao.py"
+  ],
+  "ch07": [
+   "ch07/ma_nguon_07_01_da_tap.py",
+   "ch07/ma_nguon_07_02_logup.py",
+   "ch07/ma_nguon_07_03_plonk_logup.py",
+   "ch07/ma_nguon_07_04_dac_so.py",
+   "ch07/ma_nguon_07_05_bit_vs_lookup.py",
+   "ch07/ma_nguon_07_06_kiem_pham_vi.py",
+   "ch07/ma_nguon_07_07_sai_so_toy.py"
+  ],
+  "ch08": [
+   "ch08/ma_nguon_08_01_mle_eq.py",
+   "ch08/ma_nguon_08_02_sumcheck.py",
+   "ch08/ma_nguon_08_03_sai_so_sumcheck.py",
+   "ch08/ma_nguon_08_04_gkr.py",
+   "ch08/ma_nguon_08_05_spartan.py",
+   "ch08/ma_nguon_08_06_zerocheck.py",
+   "ch08/ma_nguon_08_07_dem_phep_nhan.py"
+  ],
+  "ch09": [
+   "ch09/kiem_nova_fold.py",
+   "ch09/lab_r2_tong_hop.py",
+   "ch09/ma_nguon_09_01_chu_trinh.py",
+   "ch09/ma_nguon_09_02_nonnative.py",
+   "ch09/ma_nguon_09_03_fold_ccs.py"
+  ],
   "ch10": [
    "ch10/bai_tap_cua_so_2_16.py",
    "ch10/ho_duong_cong.py",
@@ -301,6 +401,20 @@
    "ch10/ma_nguon_10_05_montgomery.py",
    "ch10/ma_nguon_10_06_ntt_dem.py",
    "ch10/thap_truong.py"
+  ],
+  "ch11": [
+   "ch11/ma_nguon_11_01_montmul_tay.py",
+   "ch11/ma_nguon_11_02_bfly_tay.py",
+   "ch11/sinh_vector_rtl.py",
+   "ch11/tong_hop_dc.py"
+  ],
+  "ch12": [
+   "ch12/ma_nguon_12_01_kiem_duy_nhat.py",
+   "ch12/ma_nguon_12_02_mach_da_sua.py",
+   "ch12/ma_nguon_12_03_fuzz_witness.py",
+   "ch12/ma_nguon_12_04_z3_duy_nhat.py",
+   "ch12/ma_nguon_12_05_groth16_plonk.py",
+   "ch12/ma_nguon_12_06_bien_the.py"
   ]
  },
  "rust": [],

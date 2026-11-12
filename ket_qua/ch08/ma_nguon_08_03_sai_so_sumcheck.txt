@@ -1,0 +1,2 @@
+Số lần thử: 4000; Verifier chấp nhận khẳng định sai: 30 lần (tỉ lệ 0.00750)
+Lý thuyết với chiến lược này: 0.00889 (kỳ vọng 35.6 lần); cận l·d/|F| = 0.00891

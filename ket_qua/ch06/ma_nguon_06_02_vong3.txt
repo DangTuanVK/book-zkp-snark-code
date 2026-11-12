@@ -1,0 +1,6 @@
+coset s_j = [5, 6, 8, 12]  s_j^n = [176, 5, 25, 273]
+β, γ, α = 7 365 157
+bậc t(X) = 101 (≤ 3n + 5 = 101); số hệ số khác 0 = 102
+t(X) 4 hệ số đầu: [272, 432, 418, 110] ... hệ số bậc 101: 203
+số NTT cỡ 32 trong khối trên: 60 (kể cả NTT của selector, trong Prover thật đã tiền xử lý)
+trùng với phép chia đa thức: True | phần dư bằng 0: True

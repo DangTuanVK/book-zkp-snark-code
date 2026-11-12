@@ -1,0 +1,17 @@
+Command: <KHO_MA>/rtl/tb/out/dot_bien_montmul_w16/./simv -l sim.log
+Chronologic VCS simulator copyright 1991-2023
+Contains Synopsys proprietary information.
+Compiler version U-2023.03-SP2-2-T-20240104_Full64; Runtime version U-2023.03-SP2-2-T-20240104_Full64;  Nov 12 14:46 2026
+LOI vector 71806: ra (01c2, 0000), mong doi (0001, 0000)
+LOI vector 72710: ra (01c2, 0000), mong doi (0001, 0000)
+LOI vector 81224: ra (01c2, 0000), mong doi (0001, 0000)
+LOI vector 81641: ra (01c2, 0000), mong doi (0001, 0000)
+LOI vector 83876: ra (01c2, 0000), mong doi (0001, 0000)
+montmul_w16: W = 16, da kiem 201601 vector, so loi = 155, so chu ky = 230339, do tre = 2 chu ky
+KET QUA: TRUOT
+$finish called from file "<KHO_MA>/rtl/tb/tb_rtl.sv", line 84.
+$finish at simulation time           2303415000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 2303415000 ps
+CPU Time:      0.240 seconds;       Data structure size:   0.0Mb
+Thu Nov 12 14:46:34 2026

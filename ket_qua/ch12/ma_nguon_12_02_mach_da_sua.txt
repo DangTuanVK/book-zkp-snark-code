@@ -1,0 +1,12 @@
+               R1CS m  |w|  Plonkish hàng  miền PLONK n   số witness (N = 391)
+mạch cũ (5 bit)       13   12             20            32   4: [(17, 23), (23, 17), (28, 30), (30, 28)]
+mạch đã sửa           25   22             38            64   1: [(17, 23)]
+Nhãn ràng buộc mạch đã sửa: {'bool': 20, 'recompose': 2, 'le': 2, 'mul': 1}
+max a·b = 19·23 = 437 < 449 -> a·b ≡ 391 (mod 449) kéo theo a·b = 391 trên Z
+Ước của 391 với a <= 19, b <= 23: [(17, 23)]
+  (a, b) = (17, 23): d_a = 19 - a ≡   2, d_b = 23 - b ≡   0 (mod 449) -> thỏa
+  (a, b) = (23, 17): d_a = 19 - a ≡ 445, d_b = 23 - b ≡   6 (mod 449) -> vi phạm 1 ràng buộc ['le']
+  (a, b) = (28, 30): d_a = 19 - a ≡ 440, d_b = 23 - b ≡ 442 (mod 449) -> vi phạm 2 ràng buộc ['le', 'le']
+  (a, b) = (30, 28): d_a = 19 - a ≡ 438, d_b = 23 - b ≡ 444 (mod 449) -> vi phạm 2 ràng buộc ['le', 'le']
+(23, 17) bị loại vì a = 23 > 19: cận không đối xứng chọn thứ tự a <= b;
+mệnh đề sửa đổi là 'a <= 19, b <= 23', khác mệnh đề gốc '2 <= a, b <= 31'.

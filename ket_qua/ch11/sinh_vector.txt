@@ -1,0 +1,6 @@
+montmul_w16: W=16 p=0x1c1 p'=0xf1bf R mod p=0x1af, 201601 vector
+montmul_w32: W=32 p=0x78000001 p'=0x77ffffff R mod p=0xffffffe, 20064 vector
+montmul_w64: W=64 p=0xffffffff00000001 p'=0xfffffffeffffffff R mod p=0xffffffff, 20064 vector
+montmul_w256: W=256 p=0x73eda753299d7d483339d80809a1d80553bda402fffe5bfeffffffff00000001 p'=0x3d443ab0d7bf2839181b2c170004ec0653ba5bfffffe5bfdfffffffeffffffff R mod p=0x1824b159acc5056f998c4fefecbc4ff55884b7fa0003480200000001fffffffe, 5064 vector
+ntt_bfly_f449: W=16 p=0x1c1, 50320 vector (gồm vết NTT n=8,16,32,64, đối chiếu snarklib.fft: có)
+ntt_bfly_gl64: W=64 p=0xffffffff00000001, 20320 vector (gồm vết NTT n=8,16,32,64, đối chiếu snarklib.fft: không)

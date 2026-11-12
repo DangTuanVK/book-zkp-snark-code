@@ -1,0 +1,6 @@
+số giá trị N (mod 449) có witness: 286 / 449
+(1) một lần thử: x* = 349, có witness? False
+    verify không băm x: True | verify có băm x: False
+(2) nhắm 389, không băm x: 362 lần thử, verify(389) = True, verify(391) = False
+(3) nhắm 389, CÓ băm x: 484 lần thử, verify(389) = True  <- giới hạn của r = 449
+(4) 100 seed: số lần thử trung bình 420.1 (kỳ vọng ≈ 449), min 1, max 2253

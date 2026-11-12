@@ -1,0 +1,12 @@
+range_check([17, 19, 0] , 19) = True  ngoài bảng: []
+range_check([17, 20]    , 19) = False ngoài bảng: [20]
+range_check([17, 448]   , 19) = False ngoài bảng: [448]
+range_check([23, 23, 5] , 23) = True  ngoài bảng: []
+range_check([30, 28]    , 31) = True  ngoài bảng: []
+range_check([30, 28]    , 23) = False ngoài bảng: [30, 28]
+bounds = (31, 31): 4 nghiệm [(17, 23), (23, 17), (28, 30), (30, 28)]
+bounds = (19, 23): 1 nghiệm [(17, 23)]
+  (17, 23): a·b = 391; bảng (31, 31) -> True; bảng (19, 23) -> True
+  (23, 17): a·b = 391; bảng (31, 31) -> True; bảng (19, 23) -> Prover dừng (ngoài bảng)
+  (28, 30): a·b = 840; bảng (31, 31) -> True; bảng (19, 23) -> Prover dừng (ngoài bảng)
+  (30, 28): a·b = 840; bảng (31, 31) -> True; bảng (19, 23) -> Prover dừng (ngoài bảng)

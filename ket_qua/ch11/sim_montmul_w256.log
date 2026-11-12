@@ -1,0 +1,12 @@
+Command: <KHO_MA>/rtl/tb/out/montmul_w256/./simv -l sim.log
+Chronologic VCS simulator copyright 1991-2023
+Contains Synopsys proprietary information.
+Compiler version U-2023.03-SP2-2-T-20240104_Full64; Runtime version U-2023.03-SP2-2-T-20240104_Full64;  Nov 12 14:46 2026
+montmul_w256: W = 256, da kiem 5064 vector, so loi = 0, so chu ky = 5723, do tre = 2 chu ky
+KET QUA: DAT
+$finish called from file "<KHO_MA>/rtl/tb/tb_rtl.sv", line 84.
+$finish at simulation time             57255000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 57255000 ps
+CPU Time:      0.180 seconds;       Data structure size:   0.9Mb
+Thu Nov 12 14:46:30 2026

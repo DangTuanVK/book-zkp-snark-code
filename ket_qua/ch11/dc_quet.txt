@@ -1,0 +1,42 @@
+montmul_w16: 141.21 s
+# top period_ns slack_ns arrival_ns compile_s
+montmul_w16 50.00 0.0224457 49.1776 58.1
+montmul_w16 42.48 0.000801086 41.6792 4.2
+montmul_w16 36.11 0.000797272 35.3092 9.2
+montmul_w16 30.69 -3.19309 33.0831 25.4
+montmul_w16 35.00 0.000205994 34.1998 16.6
+montmul_w16 34.44 -0.0171928 33.6572 24.0
+montmul_w32: 170.49 s
+# top period_ns slack_ns arrival_ns compile_s
+montmul_w32 45.00 0.00135803 44.1986 68.1
+montmul_w32 38.25 -1.00009 38.4501 53.8
+montmul_w32 42.13 0.00131226 41.3287 18.5
+montmul_w32 40.69 0.00500488 39.885 26.4
+montmul_w64: 588.08 s
+# top period_ns slack_ns arrival_ns compile_s
+montmul_w64 90.00 0.0111847 89.1888 86.6
+montmul_w64 76.49 0.0314102 75.6586 31.2
+montmul_w64 64.99 0.00961304 64.1804 33.5
+montmul_w64 55.23 0.000843048 54.4292 82.1
+montmul_w64 46.94 -5.05291 51.1929 123.9
+montmul_w64 53.61 0.00226212 52.8077 96.5
+montmul_w64 52.80 0.00245667 51.9975 127.2
+montmul_w256: 3477.29 s
+# top period_ns slack_ns arrival_ns compile_s
+montmul_w256 120.00 0.00270844 119.197 3453.1
+ntt_bfly_f449: 126.89 s
+# top period_ns slack_ns arrival_ns compile_s
+ntt_bfly_f449 45.00 0.1292 44.0708 65.3
+ntt_bfly_f449 38.14 0.00409317 37.3359 5.5
+ntt_bfly_f449 32.42 -1.7162 33.3362 28.1
+ntt_bfly_f449 36.14 0.0116005 35.3284 9.0
+ntt_bfly_f449 35.14 0.0151558 34.3248 15.3
+ntt_bfly_gl64: 458.66 s
+# top period_ns slack_ns arrival_ns compile_s
+ntt_bfly_gl64 100.00 0.0315323 99.1685 93.8
+ntt_bfly_gl64 84.97 0.000846863 84.1692 37.3
+ntt_bfly_gl64 72.22 0.0335541 71.3864 36.0
+ntt_bfly_gl64 61.36 0.0357971 60.5242 41.3
+ntt_bfly_gl64 52.13 -0.371197 51.7012 124.4
+ntt_bfly_gl64 56.93 0.000701904 56.1293 50.7
+ntt_bfly_gl64 54.72 0.000907898 53.9191 67.2

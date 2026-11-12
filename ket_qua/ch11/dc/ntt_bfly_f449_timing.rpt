@@ -1,0 +1,76 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : ntt_bfly_f449
+Version: V-2023.12-SP3
+Date   : Thu Nov 12 14:29:15 2026
+****************************************
+
+Operating Conditions: nom_pvt   Library: lsi_10k
+Wire Load Model Mode: top
+
+  Startpoint: u_bf/u_mm/b_q_reg[4]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_bf/u_mm/y_reg[10]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_bf/u_mm/b_q_reg[4]/CP (FD1P)                          0.00       0.00 r
+  u_bf/u_mm/b_q_reg[4]/Q (FD1P)                           1.58       1.58 f
+  u_bf/u_mm/U210/Z (EOP)                                  1.42       3.00 f
+  u_bf/u_mm/U209/Z (IVAP)                                 0.69       3.69 r
+  u_bf/u_mm/U238/Z1 (B2I)                                 0.45       4.14 f
+  u_bf/u_mm/U246/Z (ND2)                                  0.78       4.91 r
+  u_bf/u_mm/DP_OP_11J5_124_1581/U1674/Z (MUX21L)          0.89       5.81 r
+  u_bf/u_mm/U473/CO (FA1AP)                               2.76       8.56 r
+  u_bf/u_mm/U207/Z (EOP)                                  1.13       9.70 f
+  u_bf/u_mm/U206/Z (ENP)                                  1.17      10.87 f
+  u_bf/u_mm/U229/Z (NR2)                                  1.07      11.94 r
+  u_bf/u_mm/U392/Z (AO7P)                                 0.37      12.30 f
+  u_bf/u_mm/U510/S (FA1AP)                                2.40      14.70 r
+  u_bf/u_mm/U275/Z (EOP)                                  1.13      15.84 f
+  u_bf/u_mm/U274/Z (EOP)                                  1.13      16.97 f
+  u_bf/u_mm/U138/Z (MUX21LP)                              0.63      17.59 r
+  u_bf/u_mm/U200/Z (ENP)                                  1.17      18.77 f
+  u_bf/u_mm/U201/Z (AN2P)                                 0.94      19.71 f
+  u_bf/u_mm/U557/Z (MUX21L)                               0.96      20.67 r
+  u_bf/u_mm/U193/Z (MUX21LP)                              1.03      21.69 r
+  u_bf/u_mm/U178/Z (MUX21L)                               0.89      22.58 r
+  u_bf/u_mm/U188/Z (MUX21LP)                              0.46      23.04 f
+  u_bf/u_mm/U326/Z (EOP)                                  1.17      24.22 f
+  u_bf/u_mm/U325/Z (ENP)                                  1.17      25.39 f
+  u_bf/u_mm/U410/S (HA1P)                                 1.28      26.67 f
+  u_bf/u_mm/U305/Z (NR2P)                                 0.82      27.48 r
+  u_bf/u_mm/U5/Z (MUX21L)                                 0.47      27.96 f
+  u_bf/u_mm/U304/Z (MUX21L)                               0.89      28.85 r
+  u_bf/u_mm/U298/Z (MUX21LP)                              0.43      29.27 f
+  u_bf/u_mm/U285/Z (MUX21LP)                              1.06      30.33 r
+  u_bf/u_mm/U163/Z (MUX21LP)                              1.03      31.36 r
+  u_bf/u_mm/U162/Z (MUX21L)                               0.89      32.25 r
+  u_bf/u_mm/U405/Z (MUX21LP)                              1.22      33.47 r
+  u_bf/u_mm/U1016/Z (ND2)                                 0.22      33.69 f
+  u_bf/u_mm/U1018/Z (ND2)                                 0.64      34.32 r
+  u_bf/u_mm/y_reg[10]/D (FD1)                             0.00      34.32 r
+  data arrival time                                                 34.32
+
+  clock clk (rise edge)                                  35.14      35.14
+  clock network delay (ideal)                             0.00      35.14
+  u_bf/u_mm/y_reg[10]/CP (FD1)                            0.00      35.14 r
+  library setup time                                     -0.80      34.34
+  data required time                                                34.34
+  --------------------------------------------------------------------------
+  data required time                                                34.34
+  data arrival time                                                -34.32
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.02
+
+
+1

@@ -1,0 +1,8 @@
+Khẳng định H = 217
+Vòng 1: s_1(0..2) = [333, 333, 192], s(0)+s(1) = 217 (cần 217), r_1 = 428, s_1(r_1) = 90
+Vòng 2: s_2(0..2) = [45, 45, 9], s(0)+s(1) = 90 (cần 90), r_2 = 72, s_2(r_2) = 74
+Bảng sau khi gập x1 = r1: [235, 325] [325, 235]
+Oracle: f~(r) = 429 , h~(r) = 131 , tích = 74
+Verifier: kiểm vòng True ; kiểm cuối g(oracle(r)) = 74 = s_2(r_2) = 74
+Proof: 2 vòng x 3 giá trị = 6 phần tử trường; cận lỗi l·d/|F| = 4/449 = 0.0089
+Khẳng định sai 218 -> False

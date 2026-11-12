@@ -1,0 +1,18 @@
+== mạch cũ (m = 13) ==
+  R1CS random_one     :  2000 lần, 0 đột biến thỏa
+  R1CS plus_minus_one :  2000 lần, 0 đột biến thỏa
+  R1CS swap_two       :  2000 lần, 0 đột biến thỏa
+  R1CS flip_bit       :  2000 lần, 0 đột biến thỏa
+  R1CS negate         :  2000 lần, 0 đột biến thỏa
+  mạch (a,b) ∈ [0,31]^2:  5000 lần,   8 lần thỏa (0.16%), cặp mới: [(23, 17), (28, 30), (30, 28)]
+  mạch (a,b) ∈ F_449^2 :  5000 lần,   0 lần thỏa (0.00%), cặp mới: []
+== mạch đã sửa (m = 25) ==
+  R1CS random_one     :  2000 lần, 0 đột biến thỏa
+  R1CS plus_minus_one :  2000 lần, 0 đột biến thỏa
+  R1CS swap_two       :  2000 lần, 0 đột biến thỏa
+  R1CS flip_bit       :  2000 lần, 0 đột biến thỏa
+  R1CS negate         :  2000 lần, 0 đột biến thỏa
+  mạch (a,b) ∈ [0,31]^2:  5000 lần,   0 lần thỏa (0.00%), cặp mới: []
+  mạch (a,b) ∈ F_449^2 :  5000 lần,   0 lần thỏa (0.00%), cặp mới: []
+Kết luận: đột biến từng ô R1CS không bao giờ lọt (các bit và tổ hợp ràng nhau);
+fuzz theo đầu vào tìm ra nghiệm giả khi miền thử nhỏ, gần như bỏ sót trên F_449^2.
