@@ -1,0 +1,22 @@
+[package]
+name = "lab_r1_groth16_marlin"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+ark-bls12-381 = "0.6"
+ark-groth16 = "0.6"
+ark-relations = "0.6"
+ark-serialize = "0.6"
+ark-snark = "0.6"
+ark-std = "0.6"
+
+# --- Marlin (SNARK phổ quát): ark-marlin mới nhất trên crates.io là 0.3.0,
+# chỉ tương thích hệ arkworks 0.3 -> khai báo song song dưới tên đổi (_v03).
+ark-marlin = "=0.3.0"
+ark-poly-commit-v03 = { package = "ark-poly-commit", version = "0.3" }
+ark-bls12-381-v03 = { package = "ark-bls12-381", version = "0.3" }
+ark-poly-v03 = { package = "ark-poly", version = "0.3" }
+ark-relations-v03 = { package = "ark-relations", version = "0.3" }
+ark-std-v03 = { package = "ark-std", version = "0.3" }
+blake2-v09 = { package = "blake2", version = "0.9" }

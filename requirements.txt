@@ -1,0 +1,2 @@
+# snarklib chỉ dùng thư viện chuẩn của Python (>= 3.8; đã chạy với 3.11).
+# Không cần cài thêm gói nào để chạy run_all.py.

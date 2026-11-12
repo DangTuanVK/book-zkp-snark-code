@@ -1,0 +1,12 @@
+[package]
+name = "lab_r3_msm_ntt"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# Bật "parallel" (rayon) để MSM/NTT dùng nhiều luồng như cấu hình thường gặp
+ark-bls12-381 = "0.6"
+ark-ec = { version = "0.6", features = ["parallel"] }
+ark-ff = { version = "0.6", features = ["parallel"] }
+ark-poly = { version = "0.6", features = ["parallel"] }
+ark-std = { version = "0.6", features = ["parallel"] }

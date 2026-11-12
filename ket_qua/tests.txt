@@ -1,0 +1,33 @@
+snarklib — kết quả chạy test
+Python 3.11.15
+
+ĐẠT  test_ccs           test_ccs                   0.00 s
+ĐẠT  test_curve         test_count                 0.01 s
+ĐẠT  test_curve         test_generator             0.00 s
+ĐẠT  test_curve         test_group_law             0.00 s
+ĐẠT  test_fft           test_coset                 0.00 s
+ĐẠT  test_fft           test_ntt_matches_naive     0.01 s
+ĐẠT  test_fft           test_other_field           0.01 s
+ĐẠT  test_field         test_arith                 0.00 s
+ĐẠT  test_field         test_fq2                   0.00 s
+ĐẠT  test_field         test_generator_roots       0.00 s
+ĐẠT  test_field         test_sqrt_all              0.02 s
+ĐẠT  test_merkle        test_merkle                0.00 s
+ĐẠT  test_mle           test_eq                    0.00 s
+ĐẠT  test_mle           test_fold                  0.00 s
+ĐẠT  test_mle           test_hypercube             0.00 s
+ĐẠT  test_pairing       test_bilinear              0.00 s
+ĐẠT  test_pairing       test_embedding_degree      0.00 s
+ĐẠT  test_pairing       test_nondegenerate         0.00 s
+ĐẠT  test_pairing       test_symmetric             0.00 s
+ĐẠT  test_plonkish      test_plonkish              0.00 s
+ĐẠT  test_poly          test_arith_divmod          0.00 s
+ĐẠT  test_poly          test_interpolate           0.00 s
+ĐẠT  test_poly          test_vanishing_lagrange    0.01 s
+ĐẠT  test_r1cs          test_r1cs                  0.00 s
+ĐẠT  test_transcript    test_deterministic         0.00 s
+ĐẠT  test_transcript    test_distribution          0.02 s
+ĐẠT  test_transcript    test_sensitivity           0.00 s
+
+Tổng: 27 đạt, 0 lỗi, 0.1 s
+Hằng số: đã ghi ket_qua/hang_so.txt

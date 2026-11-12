@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+target/
+rtl/**/csrc/
+rtl/**/simv*
+rtl/**/*.vpd
+rtl/**/*.fsdb
+rtl/**/ucli.key
+rtl/**/work/
+rtl/**/*.log

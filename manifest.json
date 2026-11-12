@@ -1,0 +1,180 @@
+{
+ "ten": "book-zkp-snark-code",
+ "sach": "zk-SNARK chuyên sâu -- IOP đa thức, cam kết đa thức và hệ chứng minh thế hệ mới",
+ "python": "3.11 (chỉ thư viện chuẩn)",
+ "snarklib": [
+  {
+   "module": "snarklib.ccs",
+   "file": "snarklib/ccs.py",
+   "mo_ta": "Customizable Constraint System (CCS) theo Setty–Thaler–Wahby."
+  },
+  {
+   "module": "snarklib.curve",
+   "file": "snarklib/curve.py",
+   "mo_ta": "Đường cong toy E: y^2 = x^3 + x trên F_q, q = 5387 (siêu kỳ dị)."
+  },
+  {
+   "module": "snarklib.fft",
+   "file": "snarklib/fft.py",
+   "mo_ta": "NTT/INTT radix-2 (Cooley–Tukey) trên F_p có 2-adicity đủ lớn."
+  },
+  {
+   "module": "snarklib.field",
+   "file": "snarklib/field.py",
+   "mo_ta": "Trường hữu hạn F_p và trường mở rộng bậc 2 F_q[i]/(i^2 + 1)."
+  },
+  {
+   "module": "snarklib.hang_so",
+   "file": "snarklib/hang_so.py",
+   "mo_ta": "Tính mọi hằng số xuyên suốt của sách bằng chính snarklib và ghi ket_qua/hang_so.txt."
+  },
+  {
+   "module": "snarklib.merkle",
+   "file": "snarklib/merkle.py",
+   "mo_ta": "Cây Merkle nhị phân dùng SHA-256."
+  },
+  {
+   "module": "snarklib.mle",
+   "file": "snarklib/mle.py",
+   "mo_ta": "Mở rộng đa tuyến tính (MLE) của bảng 2^l giá trị."
+  },
+  {
+   "module": "snarklib.pairing",
+   "file": "snarklib/pairing.py",
+   "mo_ta": "Pairing Tate rút gọn (Type 1) trên nhóm con bậc r = 449 của E: y^2 = x^3 + x / F_5387."
+  },
+  {
+   "module": "snarklib.plonkish",
+   "file": "snarklib/plonkish.py",
+   "mo_ta": "Số học hóa Plonkish (kiểu PLONK gốc, 3 cột a, b, c)."
+  },
+  {
+   "module": "snarklib.poly",
+   "file": "snarklib/poly.py",
+   "mo_ta": "Đa thức một biến trên F_p."
+  },
+  {
+   "module": "snarklib.r1cs",
+   "file": "snarklib/r1cs.py",
+   "mo_ta": "Hệ ràng buộc bậc hai R1CS: (A z) ∘ (B z) = C z, với z = (1, x, w)."
+  },
+  {
+   "module": "snarklib.transcript",
+   "file": "snarklib/transcript.py",
+   "mo_ta": "Transcript Fiat–Shamir dựa trên SHA-256 có tách miền (domain separation)."
+  }
+ ],
+ "tests": [
+  {
+   "module": "test_ccs",
+   "file": "tests/test_ccs.py",
+   "mo_ta": "Kiểm ccs.py: CCS từ R1CS và CCS bậc 3.",
+   "ham": [
+    "test_ccs"
+   ]
+  },
+  {
+   "module": "test_curve",
+   "file": "tests/test_curve.py",
+   "mo_ta": "Kiểm curve.py: luật nhóm, đếm điểm, sinh G1 tất định.",
+   "ham": [
+    "test_count",
+    "test_group_law",
+    "test_generator"
+   ]
+  },
+  {
+   "module": "test_fft",
+   "file": "tests/test_fft.py",
+   "mo_ta": "Kiểm fft.py: NTT/INTT, coset NTT khớp đánh giá trực tiếp.",
+   "ham": [
+    "test_ntt_matches_naive",
+    "test_coset",
+    "test_other_field"
+   ]
+  },
+  {
+   "module": "test_field",
+   "file": "tests/test_field.py",
+   "mo_ta": "Kiểm field.py: F_p, Tonelli–Shanks, phần tử sinh, căn đơn vị, F_{q^2}.",
+   "ham": [
+    "test_arith",
+    "test_sqrt_all",
+    "test_generator_roots",
+    "test_fq2"
+   ]
+  },
+  {
+   "module": "test_merkle",
+   "file": "tests/test_merkle.py",
+   "mo_ta": "Kiểm merkle.py: commit, open, verify, phát hiện giả mạo.",
+   "ham": [
+    "test_merkle"
+   ]
+  },
+  {
+   "module": "test_mle",
+   "file": "tests/test_mle.py",
+   "mo_ta": "Kiểm mle.py: MLE trùng bảng trên hypercube, eq, fold.",
+   "ham": [
+    "test_hypercube",
+    "test_eq",
+    "test_fold"
+   ]
+  },
+  {
+   "module": "test_pairing",
+   "file": "tests/test_pairing.py",
+   "mo_ta": "Kiểm pairing.py: song tuyến tính, không suy biến, đối xứng, e^449 = 1.",
+   "ham": [
+    "test_embedding_degree",
+    "test_nondegenerate",
+    "test_bilinear",
+    "test_symmetric"
+   ]
+  },
+  {
+   "module": "test_plonkish",
+   "file": "tests/test_plonkish.py",
+   "mo_ta": "Kiểm plonkish.py: cổng + ràng buộc sao chép trên ví dụ a·b = 391.",
+   "ham": [
+    "test_plonkish"
+   ]
+  },
+  {
+   "module": "test_poly",
+   "file": "tests/test_poly.py",
+   "mo_ta": "Kiểm poly.py: số học, chia có dư, nội suy, Z_H, L_i.",
+   "ham": [
+    "test_arith_divmod",
+    "test_interpolate",
+    "test_vanishing_lagrange"
+   ]
+  },
+  {
+   "module": "test_r1cs",
+   "file": "tests/test_r1cs.py",
+   "mo_ta": "Kiểm r1cs.py trên ví dụ a·b = N = 391.",
+   "ham": [
+    "test_r1cs"
+   ]
+  },
+  {
+   "module": "test_transcript",
+   "file": "tests/test_transcript.py",
+   "mo_ta": "Kiểm transcript.py: tất định, nhạy với nhãn/thứ tự/dữ liệu.",
+   "ham": [
+    "test_deterministic",
+    "test_sensitivity",
+    "test_distribution"
+   ]
+  }
+ ],
+ "ket_qua": [
+  "ket_qua/hang_so.txt",
+  "ket_qua/tests.txt"
+ ],
+ "ma_nguon": [],
+ "rust": [],
+ "rtl": []
+}

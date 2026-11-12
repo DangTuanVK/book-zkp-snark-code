@@ -1,0 +1,41 @@
+# Output thật của 3 bài chạy thử Rust (T-03d), 2026-11-12 13:45:26 +0700
+# Máy: xem ket_qua/may_do.txt; build: cargo build --release; tải máy lúc chạy: load average: 9.04, 4.81, 2.90
+
+===== lab_r1_groth16_marlin: cargo run --release =====
+[R1] Groth16/BLS12-381 setup: 14.10ms
+[R1] prove (a=17, b=23): 2.85ms
+[R1] kích thước proof (nén): 192 byte
+[R1] verify với c=391: true (4.03ms)
+[R1] verify với c=392: false
+[R1] Marlin/BLS12-381 universal setup (64,64,64): 8.69ms
+[R1] Marlin index (chuyên biệt hóa từ SRS): 9.76ms
+[R1] Marlin prove (a=17, b=23): 24.16ms
+[R1] Marlin verify với c=391: true (9.45ms)
+PC::Check failed
+[R1] Marlin verify với c=392: false
+(exit=0)
+
+===== lab_r2_nova: cargo run --release =====
+[R2] Nova PublicParams::setup (Pallas/Vesta): 942.38ms
+[R2] số ràng buộc mỗi bước (mạch chính, mạch phụ): (9819, 10349)
+[R2] prove_step 0: 217.00ns
+[R2] prove_step 1: 38.23ms
+[R2] prove_step 2: 38.91ms
+[R2] prove_step 3: 39.83ms
+[R2] prove_step 4: 39.32ms
+[R2] tổng thời gian IVC 5 bước: 174.08ms
+[R2] RecursiveSNARK::verify: OK (27.46ms)
+[R2] z_5 khớp tính trực tiếp: true
+[R2] z_5 (64 bit thấp) = 53697414933907
+[R2] CompressedSNARK::setup: 96.46ms
+[R2] CompressedSNARK::prove: 439.25ms
+[R2] kích thước CompressedSNARK (bincode): 10592 byte
+[R2] CompressedSNARK::verify: true (32.83ms)
+(exit=0)
+
+===== lab_r3_msm_ntt: cargo run --release =====
+[R3] n = 2^10 = 1024, số luồng khả dụng = 96, đo 20 lần, lấy trung vị
+[R3] MSM G1 2^10: 6.44ms (trung vị) | ngây thơ: 207.03ms | khớp: true
+[R3] NTT (fft) Fr 2^10: 556.75µs | INTT (ifft): 870.17µs (trung vị)
+[R3] ifft(fft(a)) == a: true | fft(a)[1] == a(omega): true
+(exit=0)

@@ -1,0 +1,63 @@
+KẾT QUẢ KIỂM CÔNG CỤ (T-03e) -- cho Ch.11 (phần cứng) và Ch.12 (an toàn mạch)
+Ngày chạy: 2026-11-12, máy chủ (RHEL 8, glibc 2.28)
+Tái hiện: rtl/smoke/run.sh (sinh mọi file vào rtl/smoke/out/, đã gitignore)
+
+1. ĐƯỜNG DẪN CÔNG CỤ
+- VCS      : <SYNOPSYS>/vcs/current/bin/vcs  (current -> vcs/U-2023.03-SP2-2-T-20240104)
+             Phiên bản: U-2023.03-SP2-2-T-20240104_Full64
+- dc_shell : <SYNOPSYS>/syn/V-2023.12-SP3/bin/dc_shell (Design Compiler Graphical, DC Ultra)
+             (có thêm bản <SYNOPSYS>/syn/Y-2026.03-SP1, chưa dùng)
+- lsi_10k  : <SYNOPSYS>/syn/V-2023.12-SP3/libraries/syn/lsi_10k.db  (.lib cùng thư mục)
+- Biến môi trường (đã có sẵn trong profile, xem <SYNOPSYS>/env.sh):
+    SNPSLMD_LICENSE_FILE=<may-chu-license>
+    VCS_HOME=<SYNOPSYS>/vcs/current
+- Sách PQC (Ch.16) chỉ ghi "VCS + dc_shell + lsi_10k"; script gốc nằm trong
+  scratchpad cũ, không còn trong sach-PQC-code => script DC ở đây viết mới:
+  rtl/smoke/syn_addmod449.tcl (search_path, target_library=lsi_10k.db,
+  link_library={* lsi_10k.db}, analyze -format sverilog, elaborate,
+  set_max_delay 10 từ mọi vào tới mọi ra, compile_ultra -no_autoungroup).
+
+2. MÔ PHỎNG VCS -- addmod449 (cộng mod 449, 9 bit, tổ hợp)
+Lệnh: vcs -full64 -sverilog addmod449.sv tb_addmod449.sv -o simv && ./simv
+Output thật:
+    addmod449: da kiem 201601 cap, so loi = 0
+    CPU Time: 0.170 seconds
+=> 449^2 = 201601 cặp, 0 lỗi.
+Lưu ý: VCS báo lỗi ITSFM nếu chỉ testbench có `timescale -> đặt `timescale ở cả hai file.
+
+3. TỔNG HỢP DC -- lsi_10k, ràng buộc set_max_delay 10 ns (vào -> ra)
+report_area:
+    Number of cells           : 135 (tổ hợp 135, tuần tự 0, buf/inv 18)
+    Combinational area        : 277.000000
+    Total cell area           : 277.000000   (đơn vị diện tích của lsi_10k)
+    Net Interconnect area     : undefined (No wire load specified)
+report_timing:
+    Startpoint b[0] (input port) -> Endpoint y[8] (output port)
+    data arrival time 9.85 ns, required 10.00 ns, slack (MET) 0.15 ns
+report_qor: Levels of Logic 9, Critical Path Length 9.85
+Ghi chú: DC tối ưu vừa đủ ràng buộc nên 9.85 ns là kết quả với max_delay=10,
+  không phải độ trễ nhỏ nhất; muốn f_max cần quét max_delay.
+Cảnh báo DC (vô hại): UISN-40 (tự thêm dw_foundation.sldb), PWR-424/PWR-13
+  (lsi_10k thiếu mô tả công suất), PWR-80 (không có clock). Không có Error.
+
+4. THỜI GIAN CHẠY
+- VCS biên dịch + mô phỏng: khoảng 1 s (real run.sh 60.59 s trừ dc 59.52 s; simv CPU 0.17 s).
+- dc_shell toàn bộ (khởi động + license + compile + report): wall 59.52 s
+  (/usr/bin/time, lần 1); lần 2 (chạy trong out/): 58.80 s, run.sh real 59.897 s.
+  Riêng compile (lần 1): Overall Compile Wall Clock Time 1.72 s => phần lớn thời gian là khởi động dc_shell.
+  Kết quả area/timing/sim giống hệt ở cả hai lần.
+- Toàn bộ run.sh: real 1m0.586s.
+
+5. Z3 CHO PYTHON (Ch.12)
+- env pqc  (<THU_MUC_LAM_VIEC>/.local/share/mamba/envs/pqc/bin/python, 3.11.15): KHÔNG có z3
+- env zkpbook: KHÔNG có z3
+- python3 hệ thống (3.10.14): KHÔNG có z3
+- Khả năng cài: pip download --no-deps z3-solver -> tải được
+  z3_solver-5.4.1.0-py3-none-manylinux_2_27_x86_64.whl (38.6 MB, glibc 2.28 đủ);
+  đã xóa thư mục tạm. conda-forge có z3-solver 5.1.0.0 (micromamba search).
+  Pip cache của env trỏ về <THU_MUC_LAM_VIEC>/.cache/pip.
+- ĐỀ XUẤT (chưa thực hiện, không đụng env pqc):
+    micromamba create -n zksnark -c conda-forge python=3.11 pip -y
+    micromamba run -n zksnark pip install z3-solver
+  (hoặc thêm z3-solver vào environment.yml của book-zkp-snark-code).
+  Env nằm dưới <THU_MUC_LAM_VIEC>/.local/share/mamba/envs/.

@@ -1,0 +1,9 @@
+[package]
+name = "lab_r2_nova"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bincode = { version = "2", features = ["serde"] }
+ff = "0.13"
+nova-snark = "0.76.0"
