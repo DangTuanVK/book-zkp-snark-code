@@ -49,4 +49,11 @@ for TT in (T2, T3):                    # 4 nhãn transcript, cho phép lọt t�
     res.append(sum(sc.hyperplonk_verify(F, TT, *sc.hyperplonk_prove(F, TT, Transcript(b"h%d" % k)),
                                         Transcript(b"h%d" % k)) for k in range(4)))
 print("Lọt qua Verifier: witness sai %d/4, phá sao chép %d/4" % tuple(res))
-assert ok and pk.n == 20 and mu == 5 and res[0] <= 1 and res[1] <= 1
+# (3) Nghiệm giả (28, 30) thỏa mọi cổng trên F_449 nên HyperPlonk CŨNG chấp nhận (lỗi của mạch, Ch.12)
+a4, b4, c4, _ = circ.plonkish_assignment({"N": 391, "a": 28, "b": 30})
+T4 = sc.plonkish_tables(F, pk, a4, b4, c4, x)
+ok4 = sum(sc.hyperplonk_verify(F, T4, *sc.hyperplonk_prove(F, T4, Transcript(b"g%d" % k)),
+                               Transcript(b"g%d" % k)) for k in range(4))
+print("Nghiệm giả (28, 30): cổng đúng =", all(e == 0 for e in pk.gate_residuals(a4, b4, c4, x)),
+      "; Verifier chấp nhận %d/4" % ok4)
+assert ok and pk.n == 20 and mu == 5 and res[0] <= 1 and res[1] <= 1 and ok4 == 4

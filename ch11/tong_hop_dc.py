@@ -71,6 +71,10 @@ def main():
                 shutil.copy(os.path.join(d, "%s_%s.rpt" % (best["tag"], k)),
                             os.path.join(KQ, "dc", "%s_%s.rpt" % (top, k)))
         dong += rows
+    if not dong:
+        # Bản clone mới không có rtl/dc/out/: giữ nguyên tong_hop.csv đã lưu.
+        print("không có kết quả DC trong %s; giữ nguyên tong_hop.csv" % OUT)
+        return
     cot = ["top", "W", "mo_ta", "chu_ky_ns", "slack_ns", "dat", "tre_toi_han_ns",
            "f_uoc_luong_MHz", "dien_tich", "dt_to_hop", "dt_tuan_tu", "so_cell", "so_ff",
            "muc_logic", "compile_s", "dc_wall_tong_s", "chon"]

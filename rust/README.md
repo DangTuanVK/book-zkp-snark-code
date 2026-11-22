@@ -1,14 +1,13 @@
 # Bài thực hành Rust (R1–R3)
 
-Ba crate binary đi kèm sách *zk-SNARK chuyên sâu*. Ở trạng thái hiện tại mỗi
-`main.rs` chỉ là **bài chạy thử** (smoke test) xác nhận toolchain và thư viện
-build, chạy được; bài lab đầy đủ sẽ viết ở đợt sau.
+Ba crate binary đi kèm sách *zk-SNARK chuyên sâu*. Mỗi `main.rs` là bài lab đầy
+đủ được dẫn trong chương tương ứng.
 
-| Crate | Nội dung chạy thử | Dùng ở |
-|---|---|---|
-| `lab_r1_groth16_marlin` | Groth16 (ark 0.6) và Marlin (ark-marlin 0.3) cho mạch `a·b = c`, `17·23 = 391` | Ch.5 |
-| `lab_r2_nova` | IVC Nova 5 bước của `z ← z² + 3` trên Pallas/Vesta, nén bằng Spartan + IPA | Ch.9 |
-| `lab_r3_msm_ntt` | MSM trên G1 và NTT (Radix-2) trên Fr của BLS12-381, cỡ 2^10 | Ch.10 |
+| Crate | Nội dung | Dùng ở | Output đã lưu |
+|---|---|---|---|
+| `lab_r1_groth16_marlin` | Groth16 (ark 0.6) và Marlin (ark-marlin 0.3) trên BLS12-381 cho mạch ví dụ, nhân rộng tới miền 2^10 .. 2^16 | Ch.5 | `ket_qua/ch05/lab_r1.txt`, `lab_r1.csv` |
+| `lab_r2_nova` | IVC Nova trên Pallas/Vesta với hàm bước kiểm phân tích `N = a·b`, nén bằng Spartan + IPA | Ch.9 | `ket_qua/ch09/lab_r2.txt`, `lab_r2.csv` |
+| `lab_r3_msm_ntt` | Đo MSM trên G1, NTT trên Fr của BLS12-381 và pairing (BLS12-381, BN254) | Ch.10 | `ket_qua/ch10/r3.txt`, `r3.csv` |
 
 ## Môi trường
 
@@ -31,9 +30,9 @@ cd ../lab_r2_nova             && cargo run --release
 cd ../lab_r3_msm_ntt          && cargo run --release
 ```
 
-Output thật của lần chạy gần nhất: `ket_qua/rust_smoke.txt`; cấu hình máy đo:
-`ket_qua/may_do.txt`. Mọi số đo trong sách trích từ hai file này (hoặc bản cập
-nhật của chúng).
+Số đo trong sách trích từ các file output ở bảng trên; cấu hình máy đo:
+`ket_qua/may_do.txt`. `ket_qua/rust_smoke.txt` là output của lần chạy thử
+toolchain ban đầu, giữ lại để tham khảo.
 
 ## Phiên bản crate (theo `Cargo.lock`, được commit)
 
