@@ -1,7 +1,7 @@
 """Chương 5 -- Một phần tử CRS thừa đủ để đổi đầu vào công khai (bản chất lỗi BCTV14).
 
 Groth16 chỉ công bố [L_j(x)/γ]_1 cho cột công khai j <= ℓ. Nếu setup lỡ công bố
-thêm K = [L_1(x)/δ]_1 cho cột N, từ một proof hợp lệ cho N ai cũng sửa được
+thêm K = [L_1(τ)/δ]_1 cho cột N, từ một proof hợp lệ cho N ai cũng sửa được
     C' = C - (N' - N)·K
 để có proof hợp lệ cho N' bất kỳ, không cần witness.
 """
@@ -23,7 +23,7 @@ proof = prove(pk, qap, [1] + x + w, rng)          # cùng proof với 05_03
 al, be, ga, de, xx = tau
 L1 = be * qap.u[1](xx) + al * qap.v[1](xx) + qap.w[1](xx)
 K = int(L1 / de) * G
-print("phần tử thừa K = [L_1(x)/δ]_1 =", K)
+print("phần tử thừa K = [L_1(τ)/δ]_1 =", K)
 
 # Không có K: giữ nguyên proof, chỉ đổi N -> bị bác
 print("proof cũ với N' = 389:", verify(vk, [389], proof))
