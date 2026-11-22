@@ -254,7 +254,9 @@ def pi_poly(n, x):
 
 
 def lagrange0_at(n, zeta):
-    """L_0(ζ) = (ζ^n - 1) / (n(ζ - 1))."""
+    """L_0(ζ) = (ζ^n - 1) / (n(ζ - 1)); tại ζ = 1 công thức có dạng 0/0 và L_0(1) = 1."""
+    if zeta == F(1):
+        return F(1)
     return (zeta ** n - 1) / (F(n) * (zeta - 1))
 
 

@@ -13,7 +13,8 @@
 import math
 
 def T_of(lam, delta):
-    return math.ceil(lam / math.log2(1 / (1 - delta)))
+    # Trừ 1e-9 để sai số dấu phẩy động không đẩy kết quả nguyên (vd. 200,0000...1) lên 201.
+    return math.ceil(lam / math.log2(1 / (1 - delta)) - 1e-9)
 
 print("(1) Số truy vấn T theo rho, lambda")
 print("%-6s %-26s %8s %8s %8s" % ("rho", "chế độ delta", "delta", "T(100)", "T(128)"))

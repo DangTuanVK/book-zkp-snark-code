@@ -48,5 +48,5 @@ for i in range(40):
     lot += ok
     zH += tr["ZH"] == 0
 print("Prover gian (28, 30), mạch đã sửa: lọt %d/40, trong đó ζ ∈ H (Z_H(ζ) = 0): %d;"
-      " lý thuyết |H|/r = 64/449 ≈ %.1f%%" % (lot, zH, 6400 / 449))
+      " lý thuyết (hàng không vi phạm)/r = 62/449 ≈ %.1f%%" % (lot, zH, 6200 / 449))
 print("Nghiệm giả là lỗi của MẠCH (thiếu ràng buộc), không phải của hệ chứng minh.")

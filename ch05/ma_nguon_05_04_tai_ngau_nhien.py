@@ -1,4 +1,4 @@
-"""Chương 5 -- Tái ngẫu nhiên hóa proof Groth16 (tính khó uốn yếu).
+"""Chương 5 -- Tái ngẫu nhiên hóa proof Groth16 (tính dễ uốn yếu).
 
 Từ π = (A, B, C) hợp lệ, ai cũng tạo được π' hợp lệ khác mà không cần witness:
     A' = r^{-1}·A,   B' = r·B + r·s·[δ]_2,   C' = C + s·A.
