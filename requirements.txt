@@ -1,2 +1,3 @@
 # snarklib chỉ dùng thư viện chuẩn của Python (>= 3.8; đã chạy với 3.11).
 # Không cần cài thêm gói nào để chạy run_all.py.
+# Tùy chọn: z3-solver==5.4.1.0 cho ch12/ma_nguon_12_04_z3_duy_nhat.py và phu_luc/d_loi_giai.py.

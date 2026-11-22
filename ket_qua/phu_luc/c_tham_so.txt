@@ -1,0 +1,50 @@
+=== BN254: y^2 = x^3 + 3
+u = 0x44e992b44a6909f1 (63 bit, trọng số Hamming 28)
+p = 30644e72e131a029 b85045b68181585d 97816a916871ca8d 3c208c16d87cfd47 (254 bit, 2-adicity 1)
+r = 30644e72e131a029 b85045b68181585d 2833e84879b97091 43e1f593f0000001 (254 bit, 2-adicity 28)
+h = 1 (1 bit)
+bậc nhúng k = 12; p, r qua Miller-Rabin 40 cơ sở; #E = h*r đã kiểm trên 3 điểm
+  p khớp crate ark-bn254-0.6.0
+  r khớp crate ark-bn254-0.6.0
+  b khớp crate ark-bn254-0.6.0
+=== BLS12-381: y^2 = x^3 + 4
+u = -0xd201000000010000 (64 bit, trọng số Hamming 6)
+p = 1a0111ea397fe69a 4b1ba7b6434bacd7 64774b84f38512bf 6730d2a0f6b0f624 1eabfffeb153ffff b9feffffffffaaab (381 bit, 2-adicity 1)
+r = 73eda753299d7d48 3339d80809a1d805 53bda402fffe5bfe ffffffff00000001 (255 bit, 2-adicity 32)
+h = 396c8c005555e156 8c00aaab0000aaab (126 bit)
+bậc nhúng k = 12; p, r qua Miller-Rabin 40 cơ sở; #E = h*r đã kiểm trên 3 điểm
+  p khớp crate ark-bls12-381-0.6.0
+  r khớp crate ark-bls12-381-0.6.0
+  b khớp crate ark-bls12-381-0.6.0
+=== BLS12-377: y^2 = x^3 + 1
+u = 0x8508c00000000001 (64 bit, trọng số Hamming 7)
+p = 1ae3a4617c510ea c63b05c06ca1493b 1a22d9f300f5138f 1ef3622fba094800 170b5d4430000000 8508c00000000001 (377 bit, 2-adicity 46)
+r = 12ab655e9a2ca556 60b44d1e5c37b001 59aa76fed0000001 0a11800000000001 (253 bit, 2-adicity 47)
+h = 170b5d4430000000 0000000000000000 (125 bit)
+bậc nhúng k = 12; p, r qua Miller-Rabin 40 cơ sở; #E = h*r đã kiểm trên 3 điểm
+  p, r công bố = p(u), r(u): True; u ≡ 1 (mod 3): True
+=== BW6-761: y^2 = x^3 - 1
+p = 122e824fb83ce0a d187c94004faff3e b926186a81d14688 528275ef8087be41 707ba638e584e919 03cebaff25b42304 8689c8ed12f9fd90 71dcd3dc73ebff2e 98a116c25667a8f8 160cf8aeeaf0a437 e6913e6870000082 f49d00000000008b (761 bit, 2-adicity 1)
+r = 1ae3a4617c510ea c63b05c06ca1493b 1a22d9f300f5138f 1ef3622fba094800 170b5d4430000000 8508c00000000001 (377 bit, 2-adicity 46)
+h = ad1972339049ce76 2c77d5ac34cb12ef c856a0853c9db94c c61c554757551c0c 832ba4061000003b 3de580000000007c (384 bit)
+bậc nhúng k = 6; p, r qua Miller-Rabin 40 cơ sở; #E = h*r đã kiểm trên 3 điểm
+  q = (t^2 + 3y^2)/4 = q(u) ở Bảng 4 = giá trị Bảng 3: True
+  r(BW6) = p(BLS12-377): True; twist y^2 = x^3 + 4 có r | #E': True
+=== Pallas: y^2 = x^3 + 5
+p = 4000000000000000 0000000000000000 224698fc094cf91b 992d30ed00000001 (255 bit, 2-adicity 32)
+r = 4000000000000000 0000000000000000 224698fc0994a8dd 8c46eb2100000001 (255 bit, 2-adicity 32)
+h = 1 (1 bit)
+bậc nhúng k > 10000; p, r qua Miller-Rabin 40 cơ sở; #E = h*r đã kiểm trên 3 điểm
+=== Vesta: y^2 = x^3 + 5
+p = 4000000000000000 0000000000000000 224698fc0994a8dd 8c46eb2100000001 (255 bit, 2-adicity 32)
+r = 4000000000000000 0000000000000000 224698fc094cf91b 992d30ed00000001 (255 bit, 2-adicity 32)
+h = 1 (1 bit)
+bậc nhúng k > 10000; p, r qua Miller-Rabin 40 cơ sở; #E = h*r đã kiểm trên 3 điểm
+  chu trình: #Pallas = q, #Vesta = p: True; q - p dài 87 bit
+  p khớp crate halo2curves-0.9.0
+  q khớp crate halo2curves-0.9.0
+=== Toy: y^2 = x^3 + x trên F_5387
+#E = 5388 = 12*449 (vết 0, siêu kỳ dị); bậc nhúng 2; g = 3
+omega_8, 16, 32, 64 = 122 349 221 391
+P = (2, 1603), G1 = 12P = (2658, 1349), e(G1, G1) = 1780 + 1636 i, (q^2-1)/r = 64632
+Tất cả phép kiểm đều đạt.

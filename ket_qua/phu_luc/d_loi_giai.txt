@@ -1,0 +1,95 @@
+
+=== Bài tập 1.2: omega_32 ===
+3^1, 3^2, 3^4, 3^8 = [3, 9, 81, 275]
+3^8 * 3^4 = 274 ; 3^12 * 3^2 = 221
+omega_32^16 = 448 (= -1); omega_32^2 = 349
+H_16 nằm trong H_32: True
+
+=== Bài tập 1.4: y^2 = x^3 + x trên F_2693 ===
+q mod 4 = 1 ; #E = 2788 ; q + 1 = 2694 ; vết t = -94
+449 | #E: False ; #E mod 449 = 94
+phân tích #E: {2: 2, 17: 1, 41: 1}
+
+=== Bài tập 2.3: khoảng cách thống kê của mặt nạ rút gọn modulo 449 ===
+2^16 = 145*449 + 431; Delta = 3879/14712832 = 2.6365e-04; log2(Delta) = -11.89
+2^512 mod 449 = 359; log2(Delta) = -505.83
+
+=== Bài tập 3.1: gamma công bố trước khi gửi y_i ===
+y = [202, 58, 433, 292] ; y' = [203, 417, 433, 292] ; W = (381, 4532)
+gamma^-1 = 90 ; trung thực: True ; khẳng định sai: True
+chỉ sửa y_1 (không bù y_2): False
+
+=== Bài tập 4.3: nhân và nghịch đảo trong F_256 ===
+a = 1 + X0 + X2 = 00010011
+b = X0 + X0·X1·X2 = 10000010
+  a0         = 1 + X0                 (0011)
+  a1         = 1                      (0001)
+  b0         = X0                     (0010)
+  b1         = X0·X1                  (1000)
+  c          = X1                     (0100)
+  a0b0       = 1                      (0001)
+  a1b1       = X0·X1                  (1000)
+  a0b1+a1b0  = X0 + X1                (0110)
+  a1b1*c     = X0 + X1 + X0·X1        (1110)
+  lo         = 1 + X0·X1              (1001)
+  hi         = X0·X1                  (1000)
+ab = 1 + X0·X1 + X0·X1·X2 = 10001001
+a^-1 = 1 + X0 + X0·X1 + X2 + X0·X2 + X1·X2 = 01111011 ; a*a^-1 = 1
+X2^2 = 1 + X1·X2 ; X2^3 = X1 + X0·X1·X2
+Delta = 1 + X0 + X1 + X0·X1 ; Delta^-1 = 1 + X0 + X1
+số phép AND của mul ở T_3: 64
+nhân với c bằng XOR: 27 phép AND mỗi phép nhân, đúng trên 256^2 cặp
+
+=== Bài tập 5.4: đổi ví dụ sang N = 437 ===
+R1CS m = 13, Plonkish 20 hàng (không đổi so với N = 391)
+witness trong [0,31]^2: [(19, 23), (23, 19)] ; k trong ab = 437 + 449k: [0]
+437 + 449 = 886 = 2*443; ước <= 31 của 886: [1, 2]
+  Groth16 proof cho (19, 23): verify = True
+  Groth16 proof cho (23, 19): verify = True
+số N' có proof giả từ proof của N = 437: 449
+
+=== Bài tập 6.2: cổng tùy biến c = a^5 ===
+deg q_P = 31, deg a = 33, deg tử số = 196 (6n+4 = 196), deg t = 164 (5n+4 = 164), dư = 0: True
+số phần (phần cuối bậc n + 4 = 36): 5; thêm 2 phần tử G1 so với 3
+cần 165 điểm -> 6 coset cỡ 32; số coset khác H của F*/H: 13; nội suy lại t: đúng
+
+=== Bài tập 7.2: Lasso cho bảng 16 bit ===
+   17 -> khúc [0, 0, 1, 1], g = 17
+   23 -> khúc [0, 0, 1, 7], g = 23
+  391 -> khúc [0, 1, 8, 7], g = 391
+  840 -> khúc [0, 3, 4, 8], g = 840
+số phần tử cam kết (c: giá trị): {4: 12064, 2: 6512, 1: 66536, 16: 48032}
+phân tích bit (7.bit) cho 1000 giá trị 16 bit: R1CS 17000 ràng buộc, 16000 biến bit
+
+=== Bài tập 8.2: sum-check bậc hai ===
+H = 257, s1(0) = 369, s1(1) = 337, s1(2) = 196
+f~(2,X) = 39 - 2X: f~(2,0) = 39, f~(2,1) = 37; s2(0) = 174, s2(1) = 22, s2(3) = 191
+k = 8^-1 = 393; D(X) = k(X-2)(X-3); D(0) + D(1) = 1
+số cặp (r1, r2) thoát: 1792 / 201601 = 0.8889%; cận 4/449 = 0.8909%; chỉ riêng vòng 1: 2/449 = 0.4454%
+
+=== Bài tập 9.3: CCS bậc 3 và số hạng chéo ===
+f(z1) = 0, f(z2) = 0, e1 = -7, e2 = -8, z1 + 5 z2 = (6, 143, 17), f = -235, mod 449 = 214, 5e1 + 25e2 = -235
+khai triển đúng với mọi r trong F_449
+
+=== Bài tập 10.3: Montgomery cho 28 * 30 ===
+a~ = 417, b~ = 94, T = 39198, m = 354, t = 387, REDC(t) = 391
+BN254: s = 4, số phép nhân từ của CIOS = 36 (2s^2 + s = 36), 28*30 = 840
+
+=== Bài tập 11.4: rút gọn lười ===
+R = 2^16, 4p = 1796, R > 4p: True; max t trên [0,2p)^2 = 460 < 2p = 898
+số cặp [0,p)^2 có t >= p: 155; các giá trị t: [450, 451]
+2000 chuỗi 20 phép nhân không trừ: luôn < 2p, rút gọn một lần ở cuối cho đúng tích
+
+=== Bài tập 12.2: so sánh bằng bit, không dùng gadget ===
+mạch mới: R1CS m = 16, Plonkish 23 hàng; witness tại N = 391: [(17, 23)]
+quét N trong [1, 448]: 437 witness, 0 nghiệm giả
+so với gadget: R1CS 25, Plonkish 38 hàng
+miền (PLONK, QAP): mạch bit (32, 32), gadget (64, 32)
+
+=== Bài tập 12.3: mạch cho N = 437 ===
+W_C(437) của mạch 5 bit: [(19, 23), (23, 19)]
+cận theo công thức: B_a = 20, B_b = 22, B_a*B_b = 440; số witness = 0
+cận (19, 23): 19*23 = 437 < 449; witness = [(19, 23)]
+z3, witness thứ hai của cận (19, 23): None
+
+Tất cả phép kiểm của Phụ lục D đều đạt.

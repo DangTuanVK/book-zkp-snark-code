@@ -47,6 +47,6 @@ assert out["n"] == out["P"] + 1 and out["order"] == q and out["k"] == 2
 
 # Pasta (số thật): Pallas/F_p có cấp q, Vesta/F_q có cấp p (halo2curves pasta)
 print("Pasta: p =", hex(fo.PALLAS_P), "\n       q =", hex(fo.PALLAS_Q),
-      "\n       q - p =", fo.PALLAS_Q - fo.PALLAS_P, "(≈ 2^%d)" % (fo.PALLAS_Q - fo.PALLAS_P).bit_length())
+      "\n       q - p =", fo.PALLAS_Q - fo.PALLAS_P, "(≈ 2^%d)" % ((fo.PALLAS_Q - fo.PALLAS_P).bit_length() - 1))
 assert fo.probable_prime(fo.PALLAS_P) and fo.probable_prime(fo.PALLAS_Q)
 print("OK: mọi phép đếm điểm khớp")

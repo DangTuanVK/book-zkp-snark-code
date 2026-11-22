@@ -444,6 +444,10 @@
       "ch12/ma_nguon_12_06_bien_the.py",
       "ch12/phu_12_menh_de_sai.py",
       "ch12/phu_12_prover_gian.py"
+    ],
+    "phu_luc": [
+      "phu_luc/c_tham_so.py",
+      "phu_luc/d_loi_giai.py"
     ]
   },
   "rust": [],
